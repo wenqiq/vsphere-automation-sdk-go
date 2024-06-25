@@ -9,19 +9,19 @@
 package activation
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
 // **WARNING:** Use only as a sample. The API is experimental and subject to change in future versions.
 //
-//  Activation tracking/management service.
+//	Activation tracking/management service.
 //
-//  An activation describes a method invocation in the runtime.
+//	An activation describes a method invocation in the runtime.
 type ActivationManagerClient interface {
 
 	// Asks for cancellation of a running activation. Whether or not the cancellation request will have any effect depends on the implementation of the method that has to be canceled.

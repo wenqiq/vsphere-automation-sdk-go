@@ -11,14 +11,14 @@
 package metadata
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"net/url"
 	"reflect"
 )
 
-// The ``SourceType`` enumeration class defines the types of sources for API metadata. You specify the type of source when adding a metadata source to a metadata service.
+// The “SourceType“ enumeration class defines the types of sources for API metadata. You specify the type of source when adding a metadata source to a metadata service.
 //
 // <p> See {@link com.vmware.vapi.bindings.ApiEnumeration enumerated types description}.
 type SourceTypeEnum string
@@ -41,7 +41,7 @@ func (s SourceTypeEnum) SourceTypeEnum() bool {
 	}
 }
 
-// The ``LyfecycleInfo`` class contains information about the lifecycle of an API element. **Warning:** This class is part of a new feature in development. It may be changed at any time and may not have all supported functionality implemented.
+// The “LyfecycleInfo“ class contains information about the lifecycle of an API element. **Warning:** This class is part of a new feature in development. It may be changed at any time and may not have all supported functionality implemented.
 type LifecycleInfo struct {
 	// Indicates whether the API element is deprecated. **Warning:** This property is part of a new feature in development. It may be changed at any time and may not have all supported functionality implemented.
 	Deprecated bool
@@ -62,7 +62,7 @@ func (s *LifecycleInfo) GetDataValue__() (vapiData_.DataValue, []error) {
 	return dataVal, nil
 }
 
-// The ``SourceCreateSpec`` class contains the registration information for a metadata source.
+// The “SourceCreateSpec“ class contains the registration information for a metadata source.
 type SourceCreateSpec struct {
 	// English language human readable description of the source.
 	Description string

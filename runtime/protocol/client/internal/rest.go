@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers/rest"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers/rest"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
 )
 
 // RESTHttpProtocol provides functionality for making and handling http REST calls to a server

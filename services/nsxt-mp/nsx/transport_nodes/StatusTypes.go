@@ -11,23 +11,23 @@
 package transport_nodes
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``nodeType`` of method Status#get.
+// Possible value for “nodeType“ of method Status#get.
 const Status_GET_NODE_TYPE_HOST = "HOST"
 
-// Possible value for ``nodeType`` of method Status#get.
+// Possible value for “nodeType“ of method Status#get.
 const Status_GET_NODE_TYPE_EDGE = "EDGE"
 
-// Possible value for ``source`` of method Status#get0.
+// Possible value for “source“ of method Status#get0.
 const Status_GET_0_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Status#get0.
+// Possible value for “source“ of method Status#get0.
 const Status_GET_0_SOURCE_CACHED = "cached"
 
 func statusGetInputType() vapiBindings_.StructType {

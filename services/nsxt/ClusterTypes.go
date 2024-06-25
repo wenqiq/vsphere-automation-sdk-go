@@ -11,22 +11,22 @@
 package nsx_policy
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_LOCAL_LOCAL_MANAGER = "LOCAL_LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_NSX_INTELLIGENCE = "NSX_INTELLIGENCE"
 
 func clusterBackuptoremoteInputType() vapiBindings_.StructType {

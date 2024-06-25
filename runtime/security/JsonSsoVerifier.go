@@ -7,8 +7,8 @@ import (
 	"crypto"
 	"crypto/rsa"
 	"encoding/base64"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 )
 
 var algorithmMap = map[string]crypto.Hash{RS256: crypto.SHA256, RS384: crypto.SHA384, RS512: crypto.SHA512}
@@ -22,7 +22,7 @@ func NewJSONSsoVerifier() *JSONSsoVerifier {
 	return &JSONSsoVerifier{}
 }
 
-//Verify the input JSON message.
+// Verify the input JSON message.
 //
 //       For verification, we need 4 things:
 //

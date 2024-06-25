@@ -9,21 +9,21 @@
 package cli
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Source`` interface provides methods to manage the sources of command line interface (CLI) metadata information.
+// The “Source“ interface provides methods to manage the sources of command line interface (CLI) metadata information.
 //
-//  The interface definition language infrastructure provides tools to generate various kinds of metadata in JSON format from the interface definition files and additional properties files. One of the generated files contains CLI information.
+//	The interface definition language infrastructure provides tools to generate various kinds of metadata in JSON format from the interface definition files and additional properties files. One of the generated files contains CLI information.
 //
-//  A CLI metadata file contains information about one component element. When a CLI metadata file is added as a source, each source contributes only one component element's metadata.
+//	A CLI metadata file contains information about one component element. When a CLI metadata file is added as a source, each source contributes only one component element's metadata.
 //
-//  CLI metadata can also be discovered from a remote server that supports the CLI metadata services (see com.vmware.vapi.metadata.cli) package. Since multiple components can be registered with a single metadata server, when a remote server is registered as a source, that source can contribute more than one component.
+//	CLI metadata can also be discovered from a remote server that supports the CLI metadata services (see com.vmware.vapi.metadata.cli) package. Since multiple components can be registered with a single metadata server, when a remote server is registered as a source, that source can contribute more than one component.
 type SourceClient interface {
 
 	// Creates a new metadata source. Once the server validates the registration information of the metadata source, the CLI metadata is retrieved from the source. This populates elements in all the interfaces defined in com.vmware.vapi.metadata.cli package.

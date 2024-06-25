@@ -11,10 +11,10 @@
 package service
 
 import (
-	vapiMetadataMetamodel_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiMetadataMetamodel_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 

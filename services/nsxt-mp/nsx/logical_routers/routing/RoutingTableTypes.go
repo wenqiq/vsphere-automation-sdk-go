@@ -11,35 +11,35 @@
 package routing
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``routeSource`` of method RoutingTable#list.
+// Possible value for “routeSource“ of method RoutingTable#list.
 const RoutingTable_LIST_ROUTE_SOURCE_BGP = "BGP"
 
-// Possible value for ``routeSource`` of method RoutingTable#list.
+// Possible value for “routeSource“ of method RoutingTable#list.
 const RoutingTable_LIST_ROUTE_SOURCE_STATIC = "STATIC"
 
-// Possible value for ``routeSource`` of method RoutingTable#list.
+// Possible value for “routeSource“ of method RoutingTable#list.
 const RoutingTable_LIST_ROUTE_SOURCE_CONNECTED = "CONNECTED"
 
-// Possible value for ``routeSource`` of method RoutingTable#list.
+// Possible value for “routeSource“ of method RoutingTable#list.
 const RoutingTable_LIST_ROUTE_SOURCE_OSPF = "OSPF"
 
-// Possible value for ``source`` of method RoutingTable#list.
+// Possible value for “source“ of method RoutingTable#list.
 const RoutingTable_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method RoutingTable#list.
+// Possible value for “source“ of method RoutingTable#list.
 const RoutingTable_LIST_SOURCE_CACHED = "cached"
 
-// Possible value for ``vrfTable`` of method RoutingTable#list.
+// Possible value for “vrfTable“ of method RoutingTable#list.
 const RoutingTable_LIST_VRF_TABLE_DEFAULT = "DEFAULT"
 
-// Possible value for ``vrfTable`` of method RoutingTable#list.
+// Possible value for “vrfTable“ of method RoutingTable#list.
 const RoutingTable_LIST_VRF_TABLE_INTER_SR = "INTER_SR"
 
 func routingTableListInputType() vapiBindings_.StructType {

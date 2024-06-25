@@ -4,18 +4,18 @@
 package msg
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 
 type JsonRpc20Request struct {
 
-	//A String specifying the version of the JSON-RPC protocol. MUST be exactly "2.0".
+	// A String specifying the version of the JSON-RPC protocol. MUST be exactly "2.0".
 	version string
-	//A String containing the name of the method to be invoked.
+	// A String containing the name of the method to be invoked.
 	method string
-	//A Structured value that holds the parameter values to be used during the invocation of the method.
+	// A Structured value that holds the parameter values to be used during the invocation of the method.
 	params map[string]interface{}
 
 	id interface{}
@@ -24,8 +24,8 @@ type JsonRpc20Request struct {
 }
 
 func NewJsonRpc20Request(version string, method string, params map[string]interface{}, id interface{}, notification bool) JsonRpc20Request {
-	//TODO:sreeshas
-	//handle errors
+	// TODO:sreeshas
+	// handle errors
 	return JsonRpc20Request{version: version, method: method, params: params, id: id, notification: notification}
 }
 
@@ -47,7 +47,7 @@ func (j JsonRpc20Request) ValidateResponse(response JsonRpc20Response) *JsonRpc2
 		return NewJsonRpcErrorInvalidParams(nil)
 
 	}
-	//Check jsonrpc version
+	// Check jsonrpc version
 	if j.version != response.version {
 		log.Errorf("JSON RPC incompatible version: %s. Expecting %s", response.version, j.version)
 		return NewJsonRpcErrorInvalidParams(nil)

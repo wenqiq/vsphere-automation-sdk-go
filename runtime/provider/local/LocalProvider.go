@@ -6,19 +6,19 @@ package local
 import (
 	"errors"
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/provider/introspection"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/provider/introspection"
 	"strings"
 )
 
 type LocalProvider struct {
 	name string
-	//key service id
+	// key service id
 	serviceMap   map[string]core.ApiInterface
 	introspector *introspection.LocalProviderIntrospector
 	errorDefs    []data.ErrorDefinition
@@ -33,7 +33,7 @@ func NewLocalProvider(name string, loadIntrospection bool) (*LocalProvider, erro
 	}
 	var emptyMap = make(map[string]core.ApiInterface)
 
-	//load introspection
+	// load introspection
 	var introspector, err = introspection.NewLocalProviderIntrospector(name)
 	if err != nil {
 		return nil, err
@@ -49,9 +49,9 @@ func NewLocalProvider(name string, loadIntrospection bool) (*LocalProvider, erro
 		}
 	}
 
-	//these are the errors that should be augmented
-	//when `get` operation is invoked on
-	//com.vmware.vapi.std.introspection.Operation
+	// these are the errors that should be augmented
+	// when `get` operation is invoked on
+	// com.vmware.vapi.std.introspection.Operation
 	var errorDefs = []data.ErrorDefinition{
 		bindings.INTERNAL_SERVER_ERROR_DEF,
 		bindings.INVALID_ARGUMENT_ERROR_DEF,
@@ -160,7 +160,7 @@ func (localProvider *LocalProvider) Invoke(serviceID string, operationID string,
 		return core.NewMethodResult(nil, errorValue)
 	}
 	log.Debug("Validating input")
-	//Step 1: Verify input
+	// Step 1: Verify input
 	if input == nil || input.Type() != data.STRUCTURE {
 		log.Errorf("Expected input of type STRUCTURE but found nil")
 		var errorValue = bindings.CreateErrorValueFromMessageId(bindings.INVALID_ARGUMENT_ERROR_DEF,
@@ -168,7 +168,7 @@ func (localProvider *LocalProvider) Invoke(serviceID string, operationID string,
 		return core.NewMethodResult(nil, errorValue)
 	}
 	var inputDef = methodDef.InputDefinition()
-	//This case should not happen
+	// This case should not happen
 	if inputDef.Type() != data.STRUCTURE {
 		log.Error("vapi.method.input.invalid.definition ")
 		var errorValue = bindings.CreateErrorValueFromMessageId(bindings.INTERNAL_SERVER_ERROR_DEF,
@@ -176,11 +176,11 @@ func (localProvider *LocalProvider) Invoke(serviceID string, operationID string,
 		return core.NewMethodResult(nil, errorValue)
 	}
 
-	//Step 2: Execute method
+	// Step 2: Execute method
 	log.Debug("Invoking operation")
 	methodResult := apiInterface.Invoke(ctx, methodID, input)
 
-	//Step 3: Validate output
+	// Step 3: Validate output
 	log.Debug("Validating output")
 	var outputDef = methodDef.OutputDefinition()
 	if strings.HasSuffix(operationID, lib.TaskInvocationString) {

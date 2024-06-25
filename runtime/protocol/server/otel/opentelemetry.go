@@ -1,5 +1,8 @@
-/* Copyright © 2022-2023 VMware, Inc. All Rights Reserved.
-   SPDX-License-Identifier: BSD-2-Clause */
+/*
+Copyright © 2022-2023 VMware, Inc. All Rights Reserved.
+
+	SPDX-License-Identifier: BSD-2-Clause
+*/
 package otel
 
 import (
@@ -7,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"

@@ -11,119 +11,119 @@
 package trust_management
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_MGMT_CLUSTER = "MGMT_CLUSTER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_MGMT_PLANE = "MGMT_PLANE"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_API = "API"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_NOTIFICATION_COLLECTOR = "NOTIFICATION_COLLECTOR"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_SYSLOG_SERVER = "SYSLOG_SERVER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_RSYSLOG_CLIENT = "RSYSLOG_CLIENT"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_APH = "APH"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_APH_TN = "APH_TN"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CLIENT_AUTH = "CLIENT_AUTH"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_RMQ = "RMQ"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_K8S_MSG_CLIENT = "K8S_MSG_CLIENT"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_WEB_PROXY = "WEB_PROXY"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_API = "CBM_API"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_CCP = "CBM_CCP"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_CSM = "CBM_CSM"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_MP = "CBM_MP"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_GM = "CBM_GM"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_AR = "CBM_AR"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_MONITORING = "CBM_MONITORING"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_IDPS_REPORTING = "CBM_IDPS_REPORTING"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_CM_INVENTORY = "CBM_CM_INVENTORY"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_MESSAGING_MANAGER = "CBM_MESSAGING_MANAGER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_UPGRADE_COORDINATOR = "CBM_UPGRADE_COORDINATOR"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_SITE_MANAGER = "CBM_SITE_MANAGER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_CLUSTER_MANAGER = "CBM_CLUSTER_MANAGER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CBM_CORFU = "CBM_CORFU"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_COMPUTE_MANAGER = "COMPUTE_MANAGER"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_CCP = "CCP"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_ANALYTICS_AGENT = "ANALYTICS_AGENT"
 
-// Possible value for ``serviceType`` of method Certificates#applycertificate.
+// Possible value for “serviceType“ of method Certificates#applycertificate.
 const Certificates_APPLYCERTIFICATE_SERVICE_TYPE_ANALYTICS_KAFKA = "ANALYTICS_KAFKA"
 
-// Possible value for ``type`` of method Certificates#list.
+// Possible value for “type“ of method Certificates#list.
 const Certificates_LIST_TYPE_CLUSTER_API_CERTIFICATE = "cluster_api_certificate"
 
-// Possible value for ``type`` of method Certificates#list.
+// Possible value for “type“ of method Certificates#list.
 const Certificates_LIST_TYPE_API_CERTIFICATE = "api_certificate"
 
-// Possible value for ``usage`` of method Certificates#validate.
+// Possible value for “usage“ of method Certificates#validate.
 const Certificates_VALIDATE_USAGE_SERVER = "SERVER"
 
-// Possible value for ``usage`` of method Certificates#validate.
+// Possible value for “usage“ of method Certificates#validate.
 const Certificates_VALIDATE_USAGE_CLIENT = "CLIENT"
 
 func certificatesApplycertificateInputType() vapiBindings_.StructType {

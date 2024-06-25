@@ -11,20 +11,20 @@
 package directory
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Domains#create0.
+// Possible value for “action“ of method Domains#create0.
 const Domains_CREATE_0_ACTION_FULL_SYNC = "FULL_SYNC"
 
-// Possible value for ``action`` of method Domains#create0.
+// Possible value for “action“ of method Domains#create0.
 const Domains_CREATE_0_ACTION_DELTA_SYNC = "DELTA_SYNC"
 
-// Possible value for ``action`` of method Domains#create0.
+// Possible value for “action“ of method Domains#create0.
 const Domains_CREATE_0_ACTION_STOP_SYNC = "STOP_SYNC"
 
 func domainsCreateInputType() vapiBindings_.StructType {

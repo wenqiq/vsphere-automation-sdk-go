@@ -11,14 +11,14 @@
 package api
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method CloudServiceCommon#upgradeVMCAppData.
+// Possible value for “action“ of method CloudServiceCommon#upgradeVMCAppData.
 const CloudServiceCommon_UPGRADE_VMCAPP_DATA_ACTION_UPGRADE = "UPGRADE"
 
 func cloudServiceCommonGetExternalConnectivityConfigInputType() bindings.StructType {

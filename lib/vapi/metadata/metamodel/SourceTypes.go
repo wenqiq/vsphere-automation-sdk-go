@@ -11,11 +11,11 @@
 package metamodel
 
 import (
-	vapiMetadata_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiMetadata_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"net/url"
 	"reflect"
 )
@@ -23,7 +23,7 @@ import (
 // Resource type for metadata source.
 const Source_RESOURCE_TYPE = "com.vmware.vapi.metadata.metamodel.source"
 
-// The ``Info`` class contains the metadata source information.
+// The “Info“ class contains the metadata source information.
 type SourceInfo struct {
 	// English language human readable description of the source.
 	Description string
@@ -52,7 +52,7 @@ func (s *SourceInfo) GetDataValue__() (vapiData_.DataValue, []error) {
 	return dataVal, nil
 }
 
-// The ``CreateSpec`` class contains the registration information of a metamodel source.
+// The “CreateSpec“ class contains the registration information of a metamodel source.
 type SourceCreateSpec struct {
 	// English language human readable description of the source.
 	Description string

@@ -4,8 +4,8 @@
 package bindings
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
 	"reflect"
 )
 
@@ -43,7 +43,7 @@ func NewIntegerType() IntegerType {
 	return IntegerType{}
 }
 
-//implements BindingType
+// implements BindingType
 type StringType struct{}
 
 func NewStringType() StringType {
@@ -93,7 +93,7 @@ func (o OptionalType) ElementType() BindingType {
 // ListType Representation of List IDL in Golang Binding
 type ListType struct {
 	elementType BindingType
-	//this is necessary when ListType is the top most type for conversion.
+	// this is necessary when ListType is the top most type for conversion.
 	// When list is part of a struct, this is not used.
 	// When list is part of a struct, struct will be the top most type for conversion.
 	// so bindingstruct is not necessary.

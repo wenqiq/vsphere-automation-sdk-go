@@ -9,17 +9,17 @@
 package privilege
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Component`` interface provides methods to retrieve privilege information of a component element.
+// The “Component“ interface provides methods to retrieve privilege information of a component element.
 //
-//  A component element is said to contain privilege information if any one of package elements in it contains privilege information.
+//	A component element is said to contain privilege information if any one of package elements in it contains privilege information.
 type ComponentClient interface {
 
 	// Returns the identifiers for the component elements that have privilege information.

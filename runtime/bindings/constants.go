@@ -4,7 +4,7 @@
 package bindings
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 	"reflect"
 	"time"
 )

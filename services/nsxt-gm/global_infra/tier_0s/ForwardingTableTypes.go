@@ -11,26 +11,26 @@
 package tier_0s
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``componentType`` of method ForwardingTable#list.
+// Possible value for “componentType“ of method ForwardingTable#list.
 const ForwardingTable_LIST_COMPONENT_TYPE_ROUTES = "DR_ROUTES"
 
-// Possible value for ``routeSource`` of method ForwardingTable#list.
+// Possible value for “routeSource“ of method ForwardingTable#list.
 const ForwardingTable_LIST_ROUTE_SOURCE_BGP = "BGP"
 
-// Possible value for ``routeSource`` of method ForwardingTable#list.
+// Possible value for “routeSource“ of method ForwardingTable#list.
 const ForwardingTable_LIST_ROUTE_SOURCE_STATIC = "STATIC"
 
-// Possible value for ``routeSource`` of method ForwardingTable#list.
+// Possible value for “routeSource“ of method ForwardingTable#list.
 const ForwardingTable_LIST_ROUTE_SOURCE_CONNECTED = "CONNECTED"
 
-// Possible value for ``routeSource`` of method ForwardingTable#list.
+// Possible value for “routeSource“ of method ForwardingTable#list.
 const ForwardingTable_LIST_ROUTE_SOURCE_OSPF = "OSPF"
 
 func forwardingTableListInputType() vapiBindings_.StructType {

@@ -10,15 +10,15 @@ package greeter
 
 import (
 	"context"
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Greeter`` interface provides methods to greet the client.
+// The “Greeter“ interface provides methods to greet the client.
 type GreeterClient interface {
 
 	// Provides a stream of greetings

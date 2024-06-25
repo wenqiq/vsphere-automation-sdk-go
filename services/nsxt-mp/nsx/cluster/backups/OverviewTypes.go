@@ -11,23 +11,23 @@
 package backups
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``frameType`` of method Overview#list.
+// Possible value for “frameType“ of method Overview#list.
 const Overview_LIST_FRAME_TYPE_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
-// Possible value for ``frameType`` of method Overview#list.
+// Possible value for “frameType“ of method Overview#list.
 const Overview_LIST_FRAME_TYPE_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Overview#list.
+// Possible value for “frameType“ of method Overview#list.
 const Overview_LIST_FRAME_TYPE_LOCAL_LOCAL_MANAGER = "LOCAL_LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Overview#list.
+// Possible value for “frameType“ of method Overview#list.
 const Overview_LIST_FRAME_TYPE_NSX_INTELLIGENCE = "NSX_INTELLIGENCE"
 
 func overviewListInputType() vapiBindings_.StructType {

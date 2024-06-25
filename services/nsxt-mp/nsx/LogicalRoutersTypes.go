@@ -11,20 +11,20 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``routerType`` of method LogicalRouters#list.
+// Possible value for “routerType“ of method LogicalRouters#list.
 const LogicalRouters_LIST_ROUTER_TYPE_TIER0 = "TIER0"
 
-// Possible value for ``routerType`` of method LogicalRouters#list.
+// Possible value for “routerType“ of method LogicalRouters#list.
 const LogicalRouters_LIST_ROUTER_TYPE_TIER1 = "TIER1"
 
-// Possible value for ``routerType`` of method LogicalRouters#list.
+// Possible value for “routerType“ of method LogicalRouters#list.
 const LogicalRouters_LIST_ROUTER_TYPE_VRF = "VRF"
 
 func logicalRoutersCreateInputType() vapiBindings_.StructType {

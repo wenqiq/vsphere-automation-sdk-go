@@ -11,113 +11,113 @@
 package traceflows
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_PHYSICAL = "PHYSICAL"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_LR = "LR"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_LS = "LS"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_DFW = "DFW"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_BRIDGE = "BRIDGE"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_EDGE_TUNNEL = "EDGE_TUNNEL"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_EDGE_HOSTSWITCH = "EDGE_HOSTSWITCH"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_FW_BRIDGE = "FW_BRIDGE"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_EDGE_RTEP_TUNNEL = "EDGE_RTEP_TUNNEL"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_LOAD_BALANCER = "LOAD_BALANCER"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_NAT = "NAT"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_IPSEC = "IPSEC"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_SERVICE_INSERTION = "SERVICE_INSERTION"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_VMC = "VMC"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_SPOOFGUARD = "SPOOFGUARD"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_EDGE_FW = "EDGE_FW"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_DLB = "DLB"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_ANTREA_SPOOFGUARD = "ANTREA_SPOOFGUARD"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_ANTREA_LB = "ANTREA_LB"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_ANTREA_ROUTING = "ANTREA_ROUTING"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_ANTREA_DFW = "ANTREA_DFW"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_ANTREA_FORWARDING = "ANTREA_FORWARDING"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_HOST_SWITCH = "HOST_SWITCH"
 
-// Possible value for ``componentType`` of method Observations#list.
+// Possible value for “componentType“ of method Observations#list.
 const Observations_LIST_COMPONENT_TYPE_UNKNOWN = "UNKNOWN"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONFORWARDED = "TraceflowObservationForwarded"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONDROPPED = "TraceflowObservationDropped"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONDELIVERED = "TraceflowObservationDelivered"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONRECEIVED = "TraceflowObservationReceived"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONFORWARDEDLOGICAL = "TraceflowObservationForwardedLogical"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONDROPPEDLOGICAL = "TraceflowObservationDroppedLogical"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONRECEIVEDLOGICAL = "TraceflowObservationReceivedLogical"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONREPLICATIONLOGICAL = "TraceflowObservationReplicationLogical"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONRELAYEDLOGICAL = "TraceflowObservationRelayedLogical"
 
-// Possible value for ``resourceType`` of method Observations#list.
+// Possible value for “resourceType“ of method Observations#list.
 const Observations_LIST_RESOURCE_TYPE_TRACEFLOWOBSERVATIONPROTECTED = "TraceflowObservationProtected"
 
 func observationsListInputType() vapiBindings_.StructType {

@@ -8,10 +8,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 	"strconv"
 	"strings"
@@ -231,7 +231,7 @@ func (svs *DoubleValueSerializer) MarshalJSON() ([]byte, error) {
 	if len(splitResult) > 1 {
 		prec = len(splitResult[1])
 	} else {
-		//setting minimum precision to 1
+		// setting minimum precision to 1
 		prec = 1
 	}
 	buf = strconv.AppendFloat(buf, svs.doubleValue.Value(), 'f', prec, 64)

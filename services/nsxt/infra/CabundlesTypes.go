@@ -11,17 +11,17 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``type`` of method Cabundles#list.
+// Possible value for “type“ of method Cabundles#list.
 const Cabundles_LIST_TYPE_CLUSTER_API_CERTIFICATE = "cluster_api_certificate"
 
-// Possible value for ``type`` of method Cabundles#list.
+// Possible value for “type“ of method Cabundles#list.
 const Cabundles_LIST_TYPE_API_CERTIFICATE = "api_certificate"
 
 func cabundlesDeleteInputType() vapiBindings_.StructType {

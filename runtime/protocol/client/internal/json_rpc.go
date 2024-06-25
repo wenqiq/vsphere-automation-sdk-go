@@ -7,17 +7,17 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/common"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	vapiHttp "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/http"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/common"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	vapiHttp "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/http"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -219,7 +219,7 @@ func (r *RegularResponseHandler) HandleResponse(_ context.Context, response *htt
 	}
 
 	jsonRpcResponse, deserializeError := msg.DeSerializeResponse(responseBody)
-	//TODO: simplify DeserializeResponse API to return only error instead of JsonRpc20Error
+	// TODO: simplify DeserializeResponse API to return only error instead of JsonRpc20Error
 	if deserializeError != nil {
 		responseError := getResponseError(deserializeError.Message())
 		result := getErrorMethodResult(responseError)
@@ -337,7 +337,7 @@ func getFrames(ctx *core.ErrorContext, frames chan []byte, response *http.Respon
 			log.Info("Client canceled request")
 			return
 		default:
-			//continue execution
+			// continue execution
 		}
 
 		frameData, err := vapiFrameReader.ReadFrame()
@@ -412,7 +412,7 @@ func (j *JsonFrameDeserializer) deserializeFrame(frameData []byte) (core.MethodR
 	}
 
 	jsonRpcResponse, responseDeserializationErr := msg.GetJsonRpc20Response(jsonFrame)
-	//TODO: simplify GetJsonRpc20Response API to return only error instead of JsonRpc20Error
+	// TODO: simplify GetJsonRpc20Response API to return only error instead of JsonRpc20Error
 	if responseDeserializationErr != nil {
 		responseError := getResponseError(responseDeserializationErr.Message())
 		return nil, responseError

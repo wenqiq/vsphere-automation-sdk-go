@@ -11,17 +11,17 @@
 package sddcs
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	vmcModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/vmc/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	vmcModel "github.com/wenqiq/vsphere-automation-sdk-go/services/vmc/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Enablements#enableDisableAddon.
+// Possible value for “action“ of method Enablements#enableDisableAddon.
 const Enablements_ENABLE_DISABLE_ADDON_ACTION_ENABLE = "enable"
 
-// Possible value for ``action`` of method Enablements#enableDisableAddon.
+// Possible value for “action“ of method Enablements#enableDisableAddon.
 const Enablements_ENABLE_DISABLE_ADDON_ACTION_DISABLE = "disable"
 
 func enablementsEnableDisableAddonInputType() vapiBindings_.StructType {

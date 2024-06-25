@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 )
 
 // DataValueToNativeConverter converts DataValue to golang native
@@ -23,7 +23,7 @@ type DataValueToNativeConverter struct {
 	// Value which will be converted to a golang object.
 	inValue data.DataValue
 
-	//output of the visitor
+	// output of the visitor
 	outValue interface{}
 
 	typeConverter *TypeConverter
@@ -122,7 +122,7 @@ func (v *DataValueToNativeConverter) visitBlob() []error {
 		v.outValue = nilSlice
 		return nil
 	}
-	//slice is not nil. initialize an empty slice.
+	// slice is not nil. initialize an empty slice.
 	// nil slice, empty slice are different.
 	slice := reflect.MakeSlice(reflect.TypeOf([]uint8{}), 0, 0)
 	x := reflect.New(slice.Type())
@@ -504,7 +504,7 @@ func (v *DataValueToNativeConverter) setBlobType(value reflect.Value) []error {
 	}
 	if stringValue, ok := v.inValue.(*data.StringValue); ok {
 		log.Debug("Expected BlobValue but found StringValue instead.")
-		//decode base 64 encoded string.
+		// decode base 64 encoded string.
 		decodedString, decodeErr := base64.StdEncoding.DecodeString(stringValue.Value())
 		if decodeErr != nil {
 			var args = map[string]string{
@@ -605,7 +605,7 @@ func (v *DataValueToNativeConverter) setStructType(typ StructType, outputPtr ref
 					field.Set(fieldVal)
 				}
 			}
-			//error if cannot set?
+			// error if cannot set?
 		} else {
 			// is this error right?
 			return []error{l10n.NewRuntimeError("vapi.bindings.typeconverter.struct.field.invalid",
@@ -658,7 +658,7 @@ func (v *DataValueToNativeConverter) setErrorType(typ ErrorType, outputPtr refle
 				fieldVal := reflect.ValueOf(v.outValue)
 				field.Set(fieldVal)
 			}
-			//error if cannot set?
+			// error if cannot set?
 		} else {
 			// is this error right?
 			return []error{l10n.NewRuntimeError("vapi.bindings.typeconverter.struct.field.invalid",
@@ -670,8 +670,8 @@ func (v *DataValueToNativeConverter) setErrorType(typ ErrorType, outputPtr refle
 }
 
 func (v *DataValueToNativeConverter) setListType(listType ListType, slice reflect.Value) []error {
-	//https://play.golang.org/p/0aB01KBniI
-	//https://stackoverflow.com/questions/25384640/why-golang-reflect-makeslice-returns-un-addressable-value
+	// https://play.golang.org/p/0aB01KBniI
+	// https://stackoverflow.com/questions/25384640/why-golang-reflect-makeslice-returns-un-addressable-value
 	slice = slice.Elem()
 	inValue := v.inValue
 	if listValue, ok := inValue.(*data.ListValue); ok {
@@ -700,7 +700,7 @@ func (v *DataValueToNativeConverter) setListType(listType ListType, slice reflec
 func (v *DataValueToNativeConverter) setMapStructType(mapType MapType, result reflect.Value) []error {
 
 	if structValue, ok := v.inValue.(*data.StructValue); ok {
-		//s := mapType.bindingStruct
+		// s := mapType.bindingStruct
 		inValue := v.inValue
 		for _, fieldName := range structValue.FieldNames() {
 			keyBindingType := reflect.TypeOf(mapType.KeyType)
@@ -712,7 +712,7 @@ func (v *DataValueToNativeConverter) setMapStructType(mapType MapType, result re
 						map[string]string{"key": fieldName})}
 				}
 				v.inValue = data.NewIntegerValue(n)
-			} else { //StringBindingType, IdBindingType, URIBindingType, EnumBindingType
+			} else { // StringBindingType, IdBindingType, URIBindingType, EnumBindingType
 				v.inValue = data.NewStringValue(fieldName)
 			}
 			err := v.visit(mapType.KeyType)
@@ -722,7 +722,7 @@ func (v *DataValueToNativeConverter) setMapStructType(mapType MapType, result re
 			}
 			mKey := reflect.ValueOf(v.outValue)
 
-			//process value
+			// process value
 			mapVal, _ := structValue.Field(fieldName)
 			v.inValue = mapVal
 			err = v.visit(mapType.ValueType)
@@ -747,7 +747,7 @@ func (v *DataValueToNativeConverter) setMapListType(mapType MapType, result refl
 		inValue := v.inValue
 		for _, listValElem := range listValue.List() {
 			if structVal, ok := listValElem.(*data.StructValue); ok {
-				//process key
+				// process key
 				keyVal, _ := structVal.Field(lib.MAP_KEY_FIELD)
 				v.inValue = keyVal
 				err := v.visit(mapType.KeyType)
@@ -757,7 +757,7 @@ func (v *DataValueToNativeConverter) setMapListType(mapType MapType, result refl
 				}
 				mKey := reflect.ValueOf(v.outValue)
 
-				//process value
+				// process value
 				mapVal, _ := structVal.Field(lib.MAP_VALUE_FIELD)
 				v.inValue = mapVal
 				err = v.visit(mapType.ValueType)

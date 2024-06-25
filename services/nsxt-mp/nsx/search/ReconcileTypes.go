@@ -11,25 +11,25 @@
 package search
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Reconcile#create.
+// Possible value for “action“ of method Reconcile#create.
 const Reconcile_CREATE_ACTION_COMPLETE_REINDEXING = "COMPLETE_REINDEXING"
 
-// Possible value for ``action`` of method Reconcile#create.
+// Possible value for “action“ of method Reconcile#create.
 const Reconcile_CREATE_ACTION_OPENSEARCH_RESTORE = "OPENSEARCH_RESTORE"
 
-// Possible value for ``action`` of method Reconcile#create.
+// Possible value for “action“ of method Reconcile#create.
 const Reconcile_CREATE_ACTION_PRODUCT_RESTORE = "PRODUCT_RESTORE"
 
-// Possible value for ``action`` of method Reconcile#create.
+// Possible value for “action“ of method Reconcile#create.
 const Reconcile_CREATE_ACTION_PRODUCT_UPGRADE = "PRODUCT_UPGRADE"
 
-// Possible value for ``action`` of method Reconcile#create.
+// Possible value for “action“ of method Reconcile#create.
 const Reconcile_CREATE_ACTION_REBALANCE = "REBALANCE"
 
 func reconcileCreateInputType() vapiBindings_.StructType {

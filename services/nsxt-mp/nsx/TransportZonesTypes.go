@@ -11,17 +11,17 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``transportType`` of method TransportZones#list.
+// Possible value for “transportType“ of method TransportZones#list.
 const TransportZones_LIST_TRANSPORT_TYPE_OVERLAY = "OVERLAY"
 
-// Possible value for ``transportType`` of method TransportZones#list.
+// Possible value for “transportType“ of method TransportZones#list.
 const TransportZones_LIST_TRANSPORT_TYPE_VLAN = "VLAN"
 
 func transportZonesCreateInputType() vapiBindings_.StructType {

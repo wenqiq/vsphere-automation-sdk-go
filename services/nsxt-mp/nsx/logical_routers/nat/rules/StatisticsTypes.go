@@ -11,23 +11,23 @@
 package rules
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method Statistics#getperlogicalrouter.
+// Possible value for “source“ of method Statistics#getperlogicalrouter.
 const Statistics_GETPERLOGICALROUTER_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Statistics#getperlogicalrouter.
+// Possible value for “source“ of method Statistics#getperlogicalrouter.
 const Statistics_GETPERLOGICALROUTER_SOURCE_CACHED = "cached"
 
-// Possible value for ``source`` of method Statistics#getperrule.
+// Possible value for “source“ of method Statistics#getperrule.
 const Statistics_GETPERRULE_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Statistics#getperrule.
+// Possible value for “source“ of method Statistics#getperrule.
 const Statistics_GETPERRULE_SOURCE_CACHED = "cached"
 
 func statisticsGetperlogicalrouterInputType() vapiBindings_.StructType {

@@ -11,53 +11,53 @@
 package sections
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``operation`` of method Rules#create.
+// Possible value for “operation“ of method Rules#create.
 const Rules_CREATE_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Rules#create.
+// Possible value for “operation“ of method Rules#create.
 const Rules_CREATE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Rules#create.
+// Possible value for “operation“ of method Rules#create.
 const Rules_CREATE_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Rules#create.
+// Possible value for “operation“ of method Rules#create.
 const Rules_CREATE_OPERATION_BEFORE = "insert_before"
 
-// Possible value for ``operation`` of method Rules#createmultiple.
+// Possible value for “operation“ of method Rules#createmultiple.
 const Rules_CREATEMULTIPLE_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Rules#createmultiple.
+// Possible value for “operation“ of method Rules#createmultiple.
 const Rules_CREATEMULTIPLE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Rules#createmultiple.
+// Possible value for “operation“ of method Rules#createmultiple.
 const Rules_CREATEMULTIPLE_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Rules#createmultiple.
+// Possible value for “operation“ of method Rules#createmultiple.
 const Rules_CREATEMULTIPLE_OPERATION_BEFORE = "insert_before"
 
-// Possible value for ``filterType`` of method Rules#list.
+// Possible value for “filterType“ of method Rules#list.
 const Rules_LIST_FILTER_TYPE_FILTER = "FILTER"
 
-// Possible value for ``filterType`` of method Rules#list.
+// Possible value for “filterType“ of method Rules#list.
 const Rules_LIST_FILTER_TYPE_SEARCH = "SEARCH"
 
-// Possible value for ``operation`` of method Rules#revise.
+// Possible value for “operation“ of method Rules#revise.
 const Rules_REVISE_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Rules#revise.
+// Possible value for “operation“ of method Rules#revise.
 const Rules_REVISE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Rules#revise.
+// Possible value for “operation“ of method Rules#revise.
 const Rules_REVISE_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Rules#revise.
+// Possible value for “operation“ of method Rules#revise.
 const Rules_REVISE_OPERATION_BEFORE = "insert_before"
 
 func rulesCreateInputType() vapiBindings_.StructType {

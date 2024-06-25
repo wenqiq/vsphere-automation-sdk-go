@@ -11,17 +11,17 @@
 package tier_0s
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``feature`` of method SecurityConfig#get.
+// Possible value for “feature“ of method SecurityConfig#get.
 const SecurityConfig_GET_FEATURE_IDFW = "IDFW"
 
-// Possible value for ``feature`` of method SecurityConfig#get.
+// Possible value for “feature“ of method SecurityConfig#get.
 const SecurityConfig_GET_FEATURE_IDPS = "IDPS"
 
 func securityConfigGetInputType() vapiBindings_.StructType {

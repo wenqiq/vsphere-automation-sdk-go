@@ -11,20 +11,20 @@
 package routing
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``componentType`` of method ForwardingTable#list.
+// Possible value for “componentType“ of method ForwardingTable#list.
 const ForwardingTable_LIST_COMPONENT_TYPE_ROUTES = "DR_ROUTES"
 
-// Possible value for ``source`` of method ForwardingTable#list.
+// Possible value for “source“ of method ForwardingTable#list.
 const ForwardingTable_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method ForwardingTable#list.
+// Possible value for “source“ of method ForwardingTable#list.
 const ForwardingTable_LIST_SOURCE_CACHED = "cached"
 
 func forwardingTableListInputType() vapiBindings_.StructType {

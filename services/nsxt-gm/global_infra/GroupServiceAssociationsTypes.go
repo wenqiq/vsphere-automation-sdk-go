@@ -11,17 +11,17 @@
 package global_infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``serviceType`` of method GroupServiceAssociations#list.
+// Possible value for “serviceType“ of method GroupServiceAssociations#list.
 const GroupServiceAssociations_LIST_SERVICE_TYPE_FIREWALL = "firewall"
 
-// Possible value for ``serviceType`` of method GroupServiceAssociations#list.
+// Possible value for “serviceType“ of method GroupServiceAssociations#list.
 const GroupServiceAssociations_LIST_SERVICE_TYPE_IPFIX = "ipfix"
 
 func groupServiceAssociationsListInputType() vapiBindings_.StructType {

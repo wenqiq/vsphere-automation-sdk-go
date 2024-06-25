@@ -11,14 +11,14 @@
 package firewall_identity_stores
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method LdapServers#create.
+// Possible value for “action“ of method LdapServers#create.
 const LdapServers_CREATE_ACTION_CONNECTIVITY = "CONNECTIVITY"
 
 func ldapServersCreateInputType() vapiBindings_.StructType {

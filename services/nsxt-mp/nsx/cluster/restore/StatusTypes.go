@@ -11,17 +11,17 @@
 package restore
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``restoreComponent`` of method Status#get.
+// Possible value for “restoreComponent“ of method Status#get.
 const Status_GET_RESTORE_COMPONENT_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for ``restoreComponent`` of method Status#get.
+// Possible value for “restoreComponent“ of method Status#get.
 const Status_GET_RESTORE_COMPONENT_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
 func statusGetInputType() vapiBindings_.StructType {

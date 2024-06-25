@@ -11,23 +11,23 @@
 package addons
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	vmcModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/vmc/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	vmcModel "github.com/wenqiq/vsphere-automation-sdk-go/services/vmc/model"
 	"reflect"
 )
 
-// Possible value for ``addonType`` of method Credentials#create.
+// Possible value for “addonType“ of method Credentials#create.
 const Credentials_CREATE_ADDON_TYPE_HCX = "HCX"
 
-// Possible value for ``addonType`` of method Credentials#get.
+// Possible value for “addonType“ of method Credentials#get.
 const Credentials_GET_ADDON_TYPE_HCX = "HCX"
 
-// Possible value for ``addonType`` of method Credentials#list.
+// Possible value for “addonType“ of method Credentials#list.
 const Credentials_LIST_ADDON_TYPE_HCX = "HCX"
 
-// Possible value for ``addonType`` of method Credentials#update.
+// Possible value for “addonType“ of method Credentials#update.
 const Credentials_UPDATE_ADDON_TYPE_HCX = "HCX"
 
 func credentialsCreateInputType() vapiBindings_.StructType {

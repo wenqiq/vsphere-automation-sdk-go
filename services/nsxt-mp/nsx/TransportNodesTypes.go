@@ -11,20 +11,20 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method TransportNodes#updatemaintenancemode.
+// Possible value for “action“ of method TransportNodes#updatemaintenancemode.
 const TransportNodes_UPDATEMAINTENANCEMODE_ACTION_ENTER_MAINTENANCE_MODE = "enter_maintenance_mode"
 
-// Possible value for ``action`` of method TransportNodes#updatemaintenancemode.
+// Possible value for “action“ of method TransportNodes#updatemaintenancemode.
 const TransportNodes_UPDATEMAINTENANCEMODE_ACTION_FORCED_ENTER_MAINTENANCE_MODE = "forced_enter_maintenance_mode"
 
-// Possible value for ``action`` of method TransportNodes#updatemaintenancemode.
+// Possible value for “action“ of method TransportNodes#updatemaintenancemode.
 const TransportNodes_UPDATEMAINTENANCEMODE_ACTION_EXIT_MAINTENANCE_MODE = "exit_maintenance_mode"
 
 func transportNodesAddorupdateplacementreferencesInputType() vapiBindings_.StructType {

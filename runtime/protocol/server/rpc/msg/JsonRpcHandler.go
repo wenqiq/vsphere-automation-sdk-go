@@ -12,13 +12,13 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/common"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/common"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 )
 
 const ENABLE_VAPI_PROVIDER_WIRE_LOGGING = "ENABLE_VAPI_PROVIDER_WIRE_LOGGING"
@@ -101,7 +101,7 @@ func (j *JsonRpcHandler) sendResponse(response interface{}, rw http.ResponseWrit
 	}
 	rw.Header().Set(lib.HTTP_CONTENT_TYPE_HEADER, lib.JSON_CONTENT_TYPE)
 	if error != nil {
-		//Accessing directly to avoid canonicalizing header key.
+		// Accessing directly to avoid canonicalizing header key.
 		rw.Header()[lib.VAPI_ERROR] = []string{error.Name()}
 	}
 	_, writeErr := rw.Write(result)
@@ -126,7 +126,7 @@ func (j *JsonRpcHandler) processJsonRpcRequest(rw http.ResponseWriter, r *http.R
 		return
 	}
 
-	//check for json-rpc 1.1 header and body operationid and service id mismatch
+	// check for json-rpc 1.1 header and body operationid and service id mismatch
 	vapiServiceId := r.Header.Get("vapi-service")
 	vapiOperationId := r.Header.Get("vapi-operation")
 	if vapiServiceId != "" && vapiOperationId == "" {
@@ -255,7 +255,7 @@ func (j *JsonRpcHandler) SendResponseFrame(response interface{}, rw http.Respons
 		return encodeError
 	}
 	if errorVal != nil {
-		//Accessing directly to avoid canonicalizing header key.
+		// Accessing directly to avoid canonicalizing header key.
 		rw.Header()[lib.VAPI_ERROR] = []string{errorVal.Name()}
 	}
 	var err = j.writeFrame(frame, rw)

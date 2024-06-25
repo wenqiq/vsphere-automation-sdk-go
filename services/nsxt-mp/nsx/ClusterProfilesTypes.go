@@ -11,17 +11,17 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``resourceType`` of method ClusterProfiles#list.
+// Possible value for “resourceType“ of method ClusterProfiles#list.
 const ClusterProfiles_LIST_RESOURCE_TYPE_EDGEHIGHAVAILABILITYPROFILE = "EdgeHighAvailabilityProfile"
 
-// Possible value for ``resourceType`` of method ClusterProfiles#list.
+// Possible value for “resourceType“ of method ClusterProfiles#list.
 const ClusterProfiles_LIST_RESOURCE_TYPE_BRIDGEHIGHAVAILABILITYCLUSTERPROFILE = "BridgeHighAvailabilityClusterProfile"
 
 func clusterProfilesCreateInputType() vapiBindings_.StructType {

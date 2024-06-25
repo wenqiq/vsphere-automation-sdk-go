@@ -11,32 +11,32 @@
 package workflows
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_COLLECT_CONFIG = "COLLECT_CONFIG"
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_ASSESSMENT = "ASSESSMENT"
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_EXTEND_DVPG = "EXTEND_DVPG"
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_MIGRATE_VMS_TO_OVERLAY = "MIGRATE_VMS_TO_OVERLAY"
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_MIGRATE_VMS_TO_DVPG = "MIGRATE_VMS_TO_DVPG"
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_MIGRATE_GATEWAY = "MIGRATE_GATEWAY"
 
-// Possible value for ``workflowType`` of method VcWorkflowTimestampList#get.
+// Possible value for “workflowType“ of method VcWorkflowTimestampList#get.
 const VcWorkflowTimestampList_GET_WORKFLOW_TYPE_DISCONNECT_BRIDGE = "DISCONNECT_BRIDGE"
 
 func vcWorkflowTimestampListGetInputType() vapiBindings_.StructType {

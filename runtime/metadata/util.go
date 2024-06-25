@@ -3,7 +3,7 @@
 
 package metadata
 
-import "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
+import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
 
 func getError(msg string) error {
 	args := map[string]string{

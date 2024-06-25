@@ -1,10 +1,10 @@
-module github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/jwt
+module github.com/wenqiq/vsphere-automation-sdk-go/runtime/examples/jwt
 
 go 1.17
 
 require (
-	github.com/zhengxiexie/vsphere-automation-sdk-go/runtime v0.0.0-20220526130007-0c2c8313ac75
-	github.com/zhengxiexie/vsphere-automation-sdk-go/lib v0.0.0-20220517232355-763fb60294b8
+	github.com/wenqiq/vsphere-automation-sdk-go/runtime v0.0.0-20220526130007-0c2c8313ac75
+	github.com/wenqiq/vsphere-automation-sdk-go/lib v0.0.0-20220517232355-763fb60294b8
 )
 
 require (

@@ -7,12 +7,12 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 )
 
-//localizable message fields
+// localizable message fields
 const ID_FIELD_NAME = "id"
 const DEFAULT_MESSAGE_FIELD_NAME = "default_message"
 const ARGS_FIELD_NAME = "args"
@@ -150,7 +150,7 @@ func ConvertMessageToStructValue(message *l10n.Error) *data.StructValue {
 		listValue.Add(data.NewStringValue(arg))
 	}
 	result.SetField(ARGS_FIELD_NAME, listValue)
-	//TODO: JIRA 1630
+	// TODO: JIRA 1630
 	// construct localized message from localization parameters in execution context
 	result.SetField(LOCALIZED_FIELD_NAME, data.NewOptionalValue(nil))
 	result.SetField(PARAMS_FIELD_NAME, data.NewOptionalValue(nil))

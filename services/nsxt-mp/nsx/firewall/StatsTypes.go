@@ -11,19 +11,19 @@
 package firewall
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 
-// Possible value for ``category`` of method Stats#reset.
+// Possible value for “category“ of method Stats#reset.
 const Stats_RESET_CATEGORY_L3DFW = "L3DFW"
 
-// Possible value for ``category`` of method Stats#reset.
+// Possible value for “category“ of method Stats#reset.
 const Stats_RESET_CATEGORY_L3EDGE = "L3EDGE"
 
-// Possible value for ``category`` of method Stats#reset.
+// Possible value for “category“ of method Stats#reset.
 const Stats_RESET_CATEGORY_L3BRIDGEPORT = "L3BRIDGEPORT"
 
 func statsResetInputType() vapiBindings_.StructType {

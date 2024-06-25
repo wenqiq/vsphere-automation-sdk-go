@@ -5,7 +5,7 @@ package l10n
 
 import (
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 	"strings"
@@ -47,7 +47,7 @@ func NewMessageFormatter(acceptLocale *language.Tag,
 	}
 	if formatLocale == nil {
 		// English or accept locale?
-		//formatLocale = &language.English
+		// formatLocale = &language.English
 		formatLocale = acceptLocale
 	}
 	if timezone == nil {

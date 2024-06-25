@@ -9,21 +9,21 @@
 package metamodel
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Source`` interface provides methods to manage the sources of metamodel metadata information.
+// The “Source“ interface provides methods to manage the sources of metamodel metadata information.
 //
-//  The interface definition language infrastructure provides tools to generate various kinds of metadata in JSON format from the interface definition files and additional properties files. One of the generated files contains metamodel information. The generated file can be registered as a source of metadata.
+//	The interface definition language infrastructure provides tools to generate various kinds of metadata in JSON format from the interface definition files and additional properties files. One of the generated files contains metamodel information. The generated file can be registered as a source of metadata.
 //
-//  The metamodel file contains all the data present in the interface definition files. Each metamodel file contains data about one component element. When a metamodel file is added as a source, each source contributes only one component element's metadata.
+//	The metamodel file contains all the data present in the interface definition files. Each metamodel file contains data about one component element. When a metamodel file is added as a source, each source contributes only one component element's metadata.
 //
-//  Metamodel metadata can also be discovered from a remote server that supports the metamodel metadata interfaces (see com.vmware.vapi.metadata.metamodel). Since multiple components can be registered with a single metadata server, when a remote server is registered as a source, that source can contribute more than one component.
+//	Metamodel metadata can also be discovered from a remote server that supports the metamodel metadata interfaces (see com.vmware.vapi.metadata.metamodel). Since multiple components can be registered with a single metadata server, when a remote server is registered as a source, that source can contribute more than one component.
 type SourceClient interface {
 
 	// Creates a new metadata source. Once the server validates the registration information of the metadata source, the metamodel metadata is retrieved from the source. This populates elements in all the interfaces defined in com.vmware.vapi.metadata.metamodel package.

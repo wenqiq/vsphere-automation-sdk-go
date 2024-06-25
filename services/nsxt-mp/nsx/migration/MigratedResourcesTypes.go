@@ -11,86 +11,86 @@
 package migration
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_IPBLOCK = "IPBLOCK"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_IPPOOL = "IPPOOL"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_IPBLOCK_SUBNET = "IPBLOCK_SUBNET"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_IPPOOL_ALLOCATION = "IPPOOL_ALLOCATION"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_TIER0 = "TIER0"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_TIER1 = "TIER1"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_TIER0_LOGICAL_ROUTER_PORT = "TIER0_LOGICAL_ROUTER_PORT"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_TIER1_LOGICAL_ROUTER_PORT = "TIER1_LOGICAL_ROUTER_PORT"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_TIER0_LOGICAL_ROUTER_CONFIG = "TIER0_LOGICAL_ROUTER_CONFIG"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_SPOOFGUARD_PROFILES = "SPOOFGUARD_PROFILES"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LOGICAL_SWITCH = "LOGICAL_SWITCH"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LOGICAL_PORT = "LOGICAL_PORT"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_NAT = "NAT"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_IP_SET = "IP_SET"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_NS_GROUP = "NS_GROUP"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_CERTIFICATE = "CERTIFICATE"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_CRL = "CRL"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_MONITOR = "LB_MONITOR"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_POOL = "LB_POOL"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_PERSISTENCE_PROFILE = "LB_PERSISTENCE_PROFILE"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_APPLICATION_PROFILE = "LB_APPLICATION_PROFILE"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_SERVICE = "LB_SERVICE"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_CLIENT_SSL_PROFILE = "LB_CLIENT_SSL_PROFILE"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_LB_VIRTUAL_SERVER = "LB_VIRTUAL_SERVER"
 
-// Possible value for ``resourceType`` of method MigratedResources#list.
+// Possible value for “resourceType“ of method MigratedResources#list.
 const MigratedResources_LIST_RESOURCE_TYPE_DFW_SECTION = "DFW_SECTION"
 
 func migratedResourcesListInputType() vapiBindings_.StructType {

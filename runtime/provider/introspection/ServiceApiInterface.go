@@ -4,9 +4,9 @@
 package introspection
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
 )
 
 type ServiceApiInterface struct {
@@ -78,7 +78,7 @@ func (serviceApiInterface *ServiceApiInterface) get(ctx *core.ExecutionContext,
 	var structVal = inputValue.(*data.StructValue)
 	var result, error = structVal.String("id")
 	if error != nil {
-		//TODO
+		// TODO
 	}
 	return serviceApiInterface.introspection.GetServiceInfo(result)
 }

@@ -11,20 +11,20 @@
 package enforcement_points
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method HostTransportNodes#updatemaintenancemode.
+// Possible value for “action“ of method HostTransportNodes#updatemaintenancemode.
 const HostTransportNodes_UPDATEMAINTENANCEMODE_ACTION_ENTER_MAINTENANCE_MODE = "enter_maintenance_mode"
 
-// Possible value for ``action`` of method HostTransportNodes#updatemaintenancemode.
+// Possible value for “action“ of method HostTransportNodes#updatemaintenancemode.
 const HostTransportNodes_UPDATEMAINTENANCEMODE_ACTION_FORCED_ENTER_MAINTENANCE_MODE = "forced_enter_maintenance_mode"
 
-// Possible value for ``action`` of method HostTransportNodes#updatemaintenancemode.
+// Possible value for “action“ of method HostTransportNodes#updatemaintenancemode.
 const HostTransportNodes_UPDATEMAINTENANCEMODE_ACTION_EXIT_MAINTENANCE_MODE = "exit_maintenance_mode"
 
 func hostTransportNodesDeleteInputType() vapiBindings_.StructType {

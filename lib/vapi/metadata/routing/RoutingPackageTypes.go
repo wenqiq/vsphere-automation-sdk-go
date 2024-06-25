@@ -11,9 +11,9 @@
 package routing
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 
@@ -63,7 +63,7 @@ func (s *ComponentInfo) GetDataValue__() (vapiData_.DataValue, []error) {
 
 // Information about a vAPI operation that contains routing information.
 //
-//  For an explanation of containment within operations, see Operation
+//	For an explanation of containment within operations, see Operation
 type OperationInfo struct {
 	// The routing information assigned for this operation.
 	//
@@ -88,7 +88,7 @@ func (s *OperationInfo) GetDataValue__() (vapiData_.DataValue, []error) {
 
 // Information about a vAPI package containing routing information.
 //
-//  For an explanation of routing information within packages, see Package
+//	For an explanation of routing information within packages, see Package
 type PackageInfo struct {
 	// The routing information to be used for all the operations present in this package. If a particular operation has no explicit routing information defined in the routing definition file, this routing info will be used for enforcing routing.
 	RoutingInfo RoutingInfo

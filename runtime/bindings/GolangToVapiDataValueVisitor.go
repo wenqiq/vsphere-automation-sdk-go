@@ -5,9 +5,9 @@ package bindings
 
 import (
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
 	"net/url"
 	"reflect"
 	"time"
@@ -182,9 +182,9 @@ func (g *GolangToVapiDataValueVisitor) visitStructType(structType StructType) []
 	var fieldNames = structType.FieldNames()
 	for _, fieldName := range fieldNames {
 		var x = e.FieldByName(structType.canonicalFieldMap[fieldName])
-		//todo
-		//this is a possible place to check required fields are not nil.
-		//useful error can be returned from here.
+		// todo
+		// this is a possible place to check required fields are not nil.
+		// useful error can be returned from here.
 		if x.Kind() == reflect.Ptr {
 			if x.IsNil() {
 				g.inValue = nil
@@ -194,10 +194,10 @@ func (g *GolangToVapiDataValueVisitor) visitStructType(structType StructType) []
 					g.inValue = x.Interface()
 				} else if optionalType, optType := bindingType.(OptionalType); optType {
 					if _, optDS := optionalType.ElementType().(DynamicStructType); optDS {
-						//if optional dynamic structure
+						// if optional dynamic structure
 						g.inValue = x.Interface()
 					} else if _, optAE := optionalType.ElementType().(AnyErrorType); optAE {
-						//if optional AnyErrorType
+						// if optional AnyErrorType
 						g.inValue = x.Interface()
 					} else {
 						g.inValue = x.Elem().Interface()
@@ -213,7 +213,7 @@ func (g *GolangToVapiDataValueVisitor) visitStructType(structType StructType) []
 				g.inValue = nil
 			}
 		}
-		//Where is missing field error?
+		// Where is missing field error?
 		err := g.visit(structType.Field(fieldName))
 		if err != nil {
 			g.inValue = inValue

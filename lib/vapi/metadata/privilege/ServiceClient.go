@@ -9,17 +9,17 @@
 package privilege
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Service`` interface provides methods to retrieve privilege information of a service element.
+// The “Service“ interface provides methods to retrieve privilege information of a service element.
 //
-//  A service element is said to contain privilege information if one of the operation elements contained in this service element has privilege information.
+//	A service element is said to contain privilege information if one of the operation elements contained in this service element has privilege information.
 type ServiceClient interface {
 
 	// Returns the identifiers for the service elements that have privilege information.

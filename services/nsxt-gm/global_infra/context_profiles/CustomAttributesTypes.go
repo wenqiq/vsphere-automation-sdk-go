@@ -11,17 +11,17 @@
 package context_profiles
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method CustomAttributes#create.
+// Possible value for “action“ of method CustomAttributes#create.
 const CustomAttributes_CREATE_ACTION_ADD = "add"
 
-// Possible value for ``action`` of method CustomAttributes#create.
+// Possible value for “action“ of method CustomAttributes#create.
 const CustomAttributes_CREATE_ACTION_REMOVE = "remove"
 
 func customAttributesCreateInputType() vapiBindings_.StructType {

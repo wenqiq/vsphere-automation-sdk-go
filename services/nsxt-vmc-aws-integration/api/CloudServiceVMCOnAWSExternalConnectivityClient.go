@@ -9,13 +9,13 @@
 package api
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
+	"github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
+	"github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
 )
 
 const _ = core.SupportedByRuntimeVersion1

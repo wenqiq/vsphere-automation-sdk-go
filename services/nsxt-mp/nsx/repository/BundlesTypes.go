@@ -11,44 +11,44 @@
 package repository
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``product`` of method Bundles#cancelupload.
+// Possible value for “product“ of method Bundles#cancelupload.
 const Bundles_CANCELUPLOAD_PRODUCT_SAMPLE = "SAMPLE"
 
-// Possible value for ``product`` of method Bundles#cancelupload.
+// Possible value for “product“ of method Bundles#cancelupload.
 const Bundles_CANCELUPLOAD_PRODUCT_ALB_CONTROLLER = "ALB_CONTROLLER"
 
-// Possible value for ``product`` of method Bundles#cancelupload.
+// Possible value for “product“ of method Bundles#cancelupload.
 const Bundles_CANCELUPLOAD_PRODUCT_INTELLIGENCE = "INTELLIGENCE"
 
-// Possible value for ``fileType`` of method Bundles#create.
+// Possible value for “fileType“ of method Bundles#create.
 const Bundles_CREATE_FILE_TYPE_OVA = "OVA"
 
-// Possible value for ``product`` of method Bundles#create.
+// Possible value for “product“ of method Bundles#create.
 const Bundles_CREATE_PRODUCT_SAMPLE = "SAMPLE"
 
-// Possible value for ``product`` of method Bundles#create.
+// Possible value for “product“ of method Bundles#create.
 const Bundles_CREATE_PRODUCT_ALB_CONTROLLER = "ALB_CONTROLLER"
 
-// Possible value for ``product`` of method Bundles#create.
+// Possible value for “product“ of method Bundles#create.
 const Bundles_CREATE_PRODUCT_INTELLIGENCE = "INTELLIGENCE"
 
-// Possible value for ``fileType`` of method Bundles#get.
+// Possible value for “fileType“ of method Bundles#get.
 const Bundles_GET_FILE_TYPE_OVA = "OVA"
 
-// Possible value for ``product`` of method Bundles#get.
+// Possible value for “product“ of method Bundles#get.
 const Bundles_GET_PRODUCT_SAMPLE = "SAMPLE"
 
-// Possible value for ``product`` of method Bundles#get.
+// Possible value for “product“ of method Bundles#get.
 const Bundles_GET_PRODUCT_ALB_CONTROLLER = "ALB_CONTROLLER"
 
-// Possible value for ``product`` of method Bundles#get.
+// Possible value for “product“ of method Bundles#get.
 const Bundles_GET_PRODUCT_INTELLIGENCE = "INTELLIGENCE"
 
 func bundlesCanceluploadInputType() vapiBindings_.StructType {

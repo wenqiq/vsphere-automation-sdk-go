@@ -11,20 +11,20 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``appliedToEntityType`` of method IpfixProfiles#list.
+// Possible value for “appliedToEntityType“ of method IpfixProfiles#list.
 const IpfixProfiles_LIST_APPLIED_TO_ENTITY_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for ``appliedToEntityType`` of method IpfixProfiles#list.
+// Possible value for “appliedToEntityType“ of method IpfixProfiles#list.
 const IpfixProfiles_LIST_APPLIED_TO_ENTITY_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for ``appliedToEntityType`` of method IpfixProfiles#list.
+// Possible value for “appliedToEntityType“ of method IpfixProfiles#list.
 const IpfixProfiles_LIST_APPLIED_TO_ENTITY_TYPE_NSGROUP = "NSGroup"
 
 func ipfixProfilesCreateInputType() vapiBindings_.StructType {

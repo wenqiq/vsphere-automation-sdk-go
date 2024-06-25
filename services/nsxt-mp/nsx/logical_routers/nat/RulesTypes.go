@@ -11,20 +11,20 @@
 package nat
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``ruleType`` of method Rules#list.
+// Possible value for “ruleType“ of method Rules#list.
 const Rules_LIST_RULE_TYPE_ALL = "ALL"
 
-// Possible value for ``ruleType`` of method Rules#list.
+// Possible value for “ruleType“ of method Rules#list.
 const Rules_LIST_RULE_TYPE_NATV4 = "NATv4"
 
-// Possible value for ``ruleType`` of method Rules#list.
+// Possible value for “ruleType“ of method Rules#list.
 const Rules_LIST_RULE_TYPE_NAT64 = "NAT64"
 
 func rulesCreateInputType() vapiBindings_.StructType {

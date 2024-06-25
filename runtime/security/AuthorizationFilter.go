@@ -4,10 +4,10 @@
 package security
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 )
 
 // AuthorizationFilter in API Provider chain enforces the authorization
@@ -78,7 +78,7 @@ func (a *AuthorizationFilter) Invoke(serviceID string, operationID string,
 	}
 
 	for _, authzHandler := range a.handlers {
-		//TODO invoke only those handlers which support auth schemes.
+		// TODO invoke only those handlers which support auth schemes.
 		authzResult, err := authzHandler.Authorize(serviceID, operationID, ctx.SecurityContext())
 		if err != nil {
 			log.Errorf("AuthorizationHandler failed for operation '%s' : %s", fullyQualifiedOperName, err)

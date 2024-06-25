@@ -11,17 +11,17 @@
 package lb_pools
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method DetailedStatus#get.
+// Possible value for “source“ of method DetailedStatus#get.
 const DetailedStatus_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method DetailedStatus#get.
+// Possible value for “source“ of method DetailedStatus#get.
 const DetailedStatus_GET_SOURCE_CACHED = "cached"
 
 func detailedStatusGetInputType() vapiBindings_.StructType {

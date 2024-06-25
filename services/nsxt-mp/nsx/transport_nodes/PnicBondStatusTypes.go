@@ -11,23 +11,23 @@
 package transport_nodes
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``status`` of method PnicBondStatus#list.
+// Possible value for “status“ of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_UNKNOWN = "UNKNOWN"
 
-// Possible value for ``status`` of method PnicBondStatus#list.
+// Possible value for “status“ of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_UP = "UP"
 
-// Possible value for ``status`` of method PnicBondStatus#list.
+// Possible value for “status“ of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_DOWN = "DOWN"
 
-// Possible value for ``status`` of method PnicBondStatus#list.
+// Possible value for “status“ of method PnicBondStatus#list.
 const PnicBondStatus_LIST_STATUS_DEGRADED = "DEGRADED"
 
 func pnicBondStatusListInputType() vapiBindings_.StructType {

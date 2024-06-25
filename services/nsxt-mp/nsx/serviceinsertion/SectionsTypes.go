@@ -11,92 +11,92 @@
 package serviceinsertion
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``operation`` of method Sections#create.
+// Possible value for “operation“ of method Sections#create.
 const Sections_CREATE_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Sections#create.
+// Possible value for “operation“ of method Sections#create.
 const Sections_CREATE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Sections#create.
+// Possible value for “operation“ of method Sections#create.
 const Sections_CREATE_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Sections#create.
+// Possible value for “operation“ of method Sections#create.
 const Sections_CREATE_OPERATION_BEFORE = "insert_before"
 
-// Possible value for ``operation`` of method Sections#createwithrules.
+// Possible value for “operation“ of method Sections#createwithrules.
 const Sections_CREATEWITHRULES_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Sections#createwithrules.
+// Possible value for “operation“ of method Sections#createwithrules.
 const Sections_CREATEWITHRULES_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Sections#createwithrules.
+// Possible value for “operation“ of method Sections#createwithrules.
 const Sections_CREATEWITHRULES_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Sections#createwithrules.
+// Possible value for “operation“ of method Sections#createwithrules.
 const Sections_CREATEWITHRULES_OPERATION_BEFORE = "insert_before"
 
-// Possible value for ``excludeAppliedToType`` of method Sections#list.
+// Possible value for “excludeAppliedToType“ of method Sections#list.
 const Sections_LIST_EXCLUDE_APPLIED_TO_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for ``excludeAppliedToType`` of method Sections#list.
+// Possible value for “excludeAppliedToType“ of method Sections#list.
 const Sections_LIST_EXCLUDE_APPLIED_TO_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for ``excludeAppliedToType`` of method Sections#list.
+// Possible value for “excludeAppliedToType“ of method Sections#list.
 const Sections_LIST_EXCLUDE_APPLIED_TO_TYPE_LOGICALROUTER = "LogicalRouter"
 
-// Possible value for ``excludeAppliedToType`` of method Sections#list.
+// Possible value for “excludeAppliedToType“ of method Sections#list.
 const Sections_LIST_EXCLUDE_APPLIED_TO_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for ``filterType`` of method Sections#list.
+// Possible value for “filterType“ of method Sections#list.
 const Sections_LIST_FILTER_TYPE_FILTER = "FILTER"
 
-// Possible value for ``filterType`` of method Sections#list.
+// Possible value for “filterType“ of method Sections#list.
 const Sections_LIST_FILTER_TYPE_SEARCH = "SEARCH"
 
-// Possible value for ``includeAppliedToType`` of method Sections#list.
+// Possible value for “includeAppliedToType“ of method Sections#list.
 const Sections_LIST_INCLUDE_APPLIED_TO_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for ``includeAppliedToType`` of method Sections#list.
+// Possible value for “includeAppliedToType“ of method Sections#list.
 const Sections_LIST_INCLUDE_APPLIED_TO_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for ``includeAppliedToType`` of method Sections#list.
+// Possible value for “includeAppliedToType“ of method Sections#list.
 const Sections_LIST_INCLUDE_APPLIED_TO_TYPE_LOGICALROUTER = "LogicalRouter"
 
-// Possible value for ``includeAppliedToType`` of method Sections#list.
+// Possible value for “includeAppliedToType“ of method Sections#list.
 const Sections_LIST_INCLUDE_APPLIED_TO_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for ``type`` of method Sections#list.
+// Possible value for “type“ of method Sections#list.
 const Sections_LIST_TYPE_L3REDIRECT = "L3REDIRECT"
 
-// Possible value for ``operation`` of method Sections#revise.
+// Possible value for “operation“ of method Sections#revise.
 const Sections_REVISE_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Sections#revise.
+// Possible value for “operation“ of method Sections#revise.
 const Sections_REVISE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Sections#revise.
+// Possible value for “operation“ of method Sections#revise.
 const Sections_REVISE_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Sections#revise.
+// Possible value for “operation“ of method Sections#revise.
 const Sections_REVISE_OPERATION_BEFORE = "insert_before"
 
-// Possible value for ``operation`` of method Sections#revisewithrules.
+// Possible value for “operation“ of method Sections#revisewithrules.
 const Sections_REVISEWITHRULES_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method Sections#revisewithrules.
+// Possible value for “operation“ of method Sections#revisewithrules.
 const Sections_REVISEWITHRULES_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method Sections#revisewithrules.
+// Possible value for “operation“ of method Sections#revisewithrules.
 const Sections_REVISEWITHRULES_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method Sections#revisewithrules.
+// Possible value for “operation“ of method Sections#revisewithrules.
 const Sections_REVISEWITHRULES_OPERATION_BEFORE = "insert_before"
 
 func sectionsCreateInputType() vapiBindings_.StructType {

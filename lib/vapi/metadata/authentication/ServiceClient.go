@@ -9,17 +9,17 @@
 package authentication
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Service`` interface provides methods to retrieve authentication information of a service element.
+// The “Service“ interface provides methods to retrieve authentication information of a service element.
 //
-//  A service element is said to contain authentication information if there is a default authentication assigned to all operation elements contained in a service element or if one of the operation elements contained in this service element has authentication information.
+//	A service element is said to contain authentication information if there is a default authentication assigned to all operation elements contained in a service element or if one of the operation elements contained in this service element has authentication information.
 type ServiceClient interface {
 
 	// Returns the identifiers for the service elements that have authentication information.

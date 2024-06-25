@@ -11,23 +11,23 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method Tags#list.
+// Possible value for “source“ of method Tags#list.
 const Tags_LIST_SOURCE_AMAZON = "Amazon"
 
-// Possible value for ``source`` of method Tags#list.
+// Possible value for “source“ of method Tags#list.
 const Tags_LIST_SOURCE_AZURE = "Azure"
 
-// Possible value for ``source`` of method Tags#list.
+// Possible value for “source“ of method Tags#list.
 const Tags_LIST_SOURCE_NSX = "NSX"
 
-// Possible value for ``source`` of method Tags#list.
+// Possible value for “source“ of method Tags#list.
 const Tags_LIST_SOURCE_ANY = "ANY"
 
 func tagsListInputType() vapiBindings_.StructType {

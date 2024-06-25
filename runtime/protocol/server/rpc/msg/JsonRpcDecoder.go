@@ -7,16 +7,16 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 	"strings"
 )
 
-//JsonRpcDecoder decodes unmarshalled json object into vapi data value format
+// JsonRpcDecoder decodes unmarshalled json object into vapi data value format
 type JsonRpcDecoder struct {
 	serializers.MethodResultDeserializerBase
 }
@@ -202,7 +202,7 @@ func (decoder *JsonRpcDecoder) DeSerializeExecutionContext(executionContext inte
 }
 
 func (decoder *JsonRpcDecoder) DeSerializeBinaryValue(val interface{}) (data.DataValue, error) {
-	//binary value is base64 encoded on the wire. decode it first.
+	// binary value is base64 encoded on the wire. decode it first.
 	base64DecodedString, err := base64.StdEncoding.DecodeString(val.(string))
 	if err != nil {
 		return nil, err

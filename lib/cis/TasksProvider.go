@@ -9,11 +9,11 @@
 package cis
 
 import (
-	cisTask_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/cis/task"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
+	cisTask_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/cis/task"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
 )
 
-// The ``Tasks`` interface provides methods for managing the task related to a long running operation.
+// The “Tasks“ interface provides methods for managing the task related to a long running operation.
 type TasksProvider interface {
 
 	// Returns information about a task.

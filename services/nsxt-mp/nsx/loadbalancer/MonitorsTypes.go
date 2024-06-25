@@ -11,32 +11,32 @@
 package loadbalancer
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBHTTPMONITOR = "LbHttpMonitor"
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBHTTPSMONITOR = "LbHttpsMonitor"
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBICMPMONITOR = "LbIcmpMonitor"
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBTCPMONITOR = "LbTcpMonitor"
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBUDPMONITOR = "LbUdpMonitor"
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBPASSIVEMONITOR = "LbPassiveMonitor"
 
-// Possible value for ``type`` of method Monitors#list.
+// Possible value for “type“ of method Monitors#list.
 const Monitors_LIST_TYPE_LBACTIVEMONITOR = "LbActiveMonitor"
 
 func monitorsCreateInputType() vapiBindings_.StructType {

@@ -3,7 +3,7 @@
 
 package info
 
-import "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 
 const ID PrimitiveType = 16
 

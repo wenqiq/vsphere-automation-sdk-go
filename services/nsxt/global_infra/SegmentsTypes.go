@@ -11,17 +11,17 @@
 package global_infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``segmentType`` of method Segments#list.
+// Possible value for “segmentType“ of method Segments#list.
 const Segments_LIST_SEGMENT_TYPE_DVPORTGROUP = "DVPortgroup"
 
-// Possible value for ``segmentType`` of method Segments#list.
+// Possible value for “segmentType“ of method Segments#list.
 const Segments_LIST_SEGMENT_TYPE_ALL = "ALL"
 
 func segmentsGetInputType() vapiBindings_.StructType {

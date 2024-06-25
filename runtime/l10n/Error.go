@@ -3,7 +3,7 @@
 
 package l10n
 
-import "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 
 type Error struct {
 	id             string
@@ -15,7 +15,7 @@ func NewError(id string, defaultMessage string, args map[string]string) *Error {
 	return &Error{id: id, defaultMessage: defaultMessage, args: args}
 }
 
-//Creates a Error by looking for id in the runtime message bundle
+// Creates a Error by looking for id in the runtime message bundle
 func NewRuntimeError(id string, args map[string]string) *Error {
 	if args == nil {
 		args = map[string]string{}

@@ -11,18 +11,18 @@
 package vapi
 
 import (
-	vapiMetadataAuthentication_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/authentication"
-	vapiMetadataCli_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/cli"
-	vapiMetadataMetamodel_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
-	vapiMetadataPrivilege_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/privilege"
-	vapiMetadataRouting_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/routing"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	vapiMetadataAuthentication_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/authentication"
+	vapiMetadataCli_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/cli"
+	vapiMetadataMetamodel_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
+	vapiMetadataPrivilege_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/privilege"
+	vapiMetadataRouting_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/routing"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 
-// The ``ComponentInfo`` class holds component metadata of the different metadata types for an API component. The class allows any combination of metadata types to be aggregated into one instance.
+// The “ComponentInfo“ class holds component metadata of the different metadata types for an API component. The class allows any combination of metadata types to be aggregated into one instance.
 type ComponentInfo struct {
 	// The metamodel component data
 	Metamodel vapiMetadataMetamodel_.ComponentInfo
@@ -51,7 +51,7 @@ func (s *ComponentInfo) GetDataValue__() (vapiData_.DataValue, []error) {
 	return dataVal, nil
 }
 
-// The ``MetadataInfo`` is a class which holds a map of the available metadata aggregated in a ComponentInfo class.
+// The “MetadataInfo“ is a class which holds a map of the available metadata aggregated in a ComponentInfo class.
 type MetadataInfo struct {
 	// Version of the current ``MetadataInfo`` class. Property value changes when the content of the ``MetadataInfo`` or referenced classes changes. This enables class processing adjustments.
 	Version string

@@ -4,11 +4,11 @@
 package core
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 )
 
-//ApiInterface responsibility is to convert to native the DataValue and invoke the implementation
-//It also provides methods used by introspection services. Implemented by API providers.
+// ApiInterface responsibility is to convert to native the DataValue and invoke the implementation
+// It also provides methods used by introspection services. Implemented by API providers.
 type ApiInterface interface {
 	Identifier() InterfaceIdentifier
 	Definition() InterfaceDefinition

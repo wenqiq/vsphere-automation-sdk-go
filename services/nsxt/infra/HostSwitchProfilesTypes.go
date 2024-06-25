@@ -11,44 +11,44 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``deploymentType`` of method HostSwitchProfiles#list.
+// Possible value for “deploymentType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_DEPLOYMENT_TYPE_VIRTUAL_MACHINE = "VIRTUAL_MACHINE"
 
-// Possible value for ``deploymentType`` of method HostSwitchProfiles#list.
+// Possible value for “deploymentType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_DEPLOYMENT_TYPE_PHYSICAL_MACHINE = "PHYSICAL_MACHINE"
 
-// Possible value for ``deploymentType`` of method HostSwitchProfiles#list.
+// Possible value for “deploymentType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_DEPLOYMENT_TYPE_UNKNOWN = "UNKNOWN"
 
-// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
+// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_POLICYUPLINKHOSTSWITCHPROFILE = "PolicyUplinkHostSwitchProfile"
 
-// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
+// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_POLICYLLDPHOSTSWITCHPROFILE = "PolicyLldpHostSwitchProfile"
 
-// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
+// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_POLICYNIOCPROFILE = "PolicyNiocProfile"
 
-// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
+// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_POLICYEXTRACONFIGHOSTSWITCHPROFILE = "PolicyExtraConfigHostSwitchProfile"
 
-// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
+// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_POLICYVTEPHAHOSTSWITCHPROFILE = "PolicyVtepHAHostSwitchProfile"
 
-// Possible value for ``hostswitchProfileType`` of method HostSwitchProfiles#list.
+// Possible value for “hostswitchProfileType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_HOSTSWITCH_PROFILE_TYPE_POLICYHIGHPERFORMANCEHOSTSWITCHPROFILE = "PolicyHighPerformanceHostSwitchProfile"
 
-// Possible value for ``nodeType`` of method HostSwitchProfiles#list.
+// Possible value for “nodeType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_NODE_TYPE_EDGENODE = "EdgeNode"
 
-// Possible value for ``nodeType`` of method HostSwitchProfiles#list.
+// Possible value for “nodeType“ of method HostSwitchProfiles#list.
 const HostSwitchProfiles_LIST_NODE_TYPE_PUBLICCLOUDGATEWAYNODE = "PublicCloudGatewayNode"
 
 func hostSwitchProfilesDeleteInputType() vapiBindings_.StructType {

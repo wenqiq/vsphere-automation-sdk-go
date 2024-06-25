@@ -6,12 +6,12 @@ package main
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/jwt/server/bindings/vmodl/examples/greeter"
-	greeterImpl "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/jwt/server/impl"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/provider/local"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/examples/jwt/server/bindings/vmodl/examples/greeter"
+	greeterImpl "github.com/wenqiq/vsphere-automation-sdk-go/runtime/examples/jwt/server/impl"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server/rpc/msg"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/provider/local"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
 	"net/http"
 )
 

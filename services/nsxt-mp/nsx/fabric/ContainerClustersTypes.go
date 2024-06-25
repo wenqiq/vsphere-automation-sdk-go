@@ -11,77 +11,77 @@
 package fabric
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_PAS = "PAS"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_PKS = "PKS"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_KUBERNETES = "Kubernetes"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_OPENSHIFT = "Openshift"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_WCP = "WCP"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_WCP_GUEST = "WCP_Guest"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_AKS = "AKS"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_EKS = "EKS"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_TKGM = "TKGm"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_TKGI = "TKGi"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_GKE = "GKE"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_GARDENER = "Gardener"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_RANCHER = "Rancher"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_TAS = "TAS"
 
-// Possible value for ``clusterType`` of method ContainerClusters#list.
+// Possible value for “clusterType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_CLUSTER_TYPE_OTHER = "Other"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_VSPHERE = "vSphere"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_AWS = "AWS"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_AZURE = "Azure"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_GOOGLE = "Google"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_VMC = "VMC"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_KVM = "KVM"
 
-// Possible value for ``infraType`` of method ContainerClusters#list.
+// Possible value for “infraType“ of method ContainerClusters#list.
 const ContainerClusters_LIST_INFRA_TYPE_BAREMETAL = "Baremetal"
 
 func containerClustersGetInputType() vapiBindings_.StructType {

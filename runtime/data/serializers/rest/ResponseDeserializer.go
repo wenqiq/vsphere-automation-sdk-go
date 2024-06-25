@@ -7,16 +7,16 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
-	httpStatus "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib/rest"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
+	httpStatus "github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib/rest"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 )
 
 var jsonToDataValueDecoder *cleanjson.JsonToDataValueDecoder = cleanjson.NewJsonToDataValueDecoder()
@@ -80,7 +80,7 @@ func DeserializeResponse(status int, headers map[string][]string, response strin
 		return core.NewMethodResult(dataVal, nil), nil
 	}
 
-	//create errorval
+	// create errorval
 	var errorVal *data.ErrorValue
 	if restErrorName, ok := getErrorNameUsingStatus(status, restmetadata.ErrorCodeMap()); ok {
 		isVapiStdError := false

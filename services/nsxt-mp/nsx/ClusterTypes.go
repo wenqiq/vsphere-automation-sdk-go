@@ -11,41 +11,41 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_LOCAL_LOCAL_MANAGER = "LOCAL_LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Cluster#backuptoremote.
+// Possible value for “frameType“ of method Cluster#backuptoremote.
 const Cluster_BACKUPTOREMOTE_FRAME_TYPE_NSX_INTELLIGENCE = "NSX_INTELLIGENCE"
 
-// Possible value for ``force`` of method Cluster#removenode.
+// Possible value for “force“ of method Cluster#removenode.
 const Cluster_REMOVENODE_FORCE_TRUE = "true"
 
-// Possible value for ``force`` of method Cluster#removenode.
+// Possible value for “force“ of method Cluster#removenode.
 const Cluster_REMOVENODE_FORCE_FALSE = "false"
 
-// Possible value for ``gracefulShutdown`` of method Cluster#removenode.
+// Possible value for “gracefulShutdown“ of method Cluster#removenode.
 const Cluster_REMOVENODE_GRACEFUL_SHUTDOWN_TRUE = "true"
 
-// Possible value for ``gracefulShutdown`` of method Cluster#removenode.
+// Possible value for “gracefulShutdown“ of method Cluster#removenode.
 const Cluster_REMOVENODE_GRACEFUL_SHUTDOWN_FALSE = "false"
 
-// Possible value for ``ignoreRepositoryIpCheck`` of method Cluster#removenode.
+// Possible value for “ignoreRepositoryIpCheck“ of method Cluster#removenode.
 const Cluster_REMOVENODE_IGNORE_REPOSITORY_IP_CHECK_TRUE = "true"
 
-// Possible value for ``ignoreRepositoryIpCheck`` of method Cluster#removenode.
+// Possible value for “ignoreRepositoryIpCheck“ of method Cluster#removenode.
 const Cluster_REMOVENODE_IGNORE_REPOSITORY_IP_CHECK_FALSE = "false"
 
 func clusterBackuptoremoteInputType() vapiBindings_.StructType {

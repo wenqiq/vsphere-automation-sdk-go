@@ -11,17 +11,17 @@
 package fabric
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``hasParent`` of method DiscoveredNodes#list.
+// Possible value for “hasParent“ of method DiscoveredNodes#list.
 const DiscoveredNodes_LIST_HAS_PARENT_TRUE = "true"
 
-// Possible value for ``hasParent`` of method DiscoveredNodes#list.
+// Possible value for “hasParent“ of method DiscoveredNodes#list.
 const DiscoveredNodes_LIST_HAS_PARENT_FALSE = "false"
 
 func discoveredNodesCreatetransportnodeInputType() vapiBindings_.StructType {

@@ -11,20 +11,20 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method FirewallIdentityStores#create.
+// Possible value for “action“ of method FirewallIdentityStores#create.
 const FirewallIdentityStores_CREATE_ACTION_FULL_SYNC = "FULL_SYNC"
 
-// Possible value for ``action`` of method FirewallIdentityStores#create.
+// Possible value for “action“ of method FirewallIdentityStores#create.
 const FirewallIdentityStores_CREATE_ACTION_DELTA_SYNC = "DELTA_SYNC"
 
-// Possible value for ``action`` of method FirewallIdentityStores#create.
+// Possible value for “action“ of method FirewallIdentityStores#create.
 const FirewallIdentityStores_CREATE_ACTION_STOP_SYNC = "STOP_SYNC"
 
 func firewallIdentityStoresCreateInputType() vapiBindings_.StructType {

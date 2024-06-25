@@ -11,23 +11,23 @@
 package migration
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``networkLayer`` of method FeedbackResponse#acceptrecommended.
+// Possible value for “networkLayer“ of method FeedbackResponse#acceptrecommended.
 const FeedbackResponse_ACCEPTRECOMMENDED_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for ``networkLayer`` of method FeedbackResponse#acceptrecommended.
+// Possible value for “networkLayer“ of method FeedbackResponse#acceptrecommended.
 const FeedbackResponse_ACCEPTRECOMMENDED_NETWORK_LAYER_L3_L7 = "L3_L7"
 
-// Possible value for ``networkLayer`` of method FeedbackResponse#update.
+// Possible value for “networkLayer“ of method FeedbackResponse#update.
 const FeedbackResponse_UPDATE_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for ``networkLayer`` of method FeedbackResponse#update.
+// Possible value for “networkLayer“ of method FeedbackResponse#update.
 const FeedbackResponse_UPDATE_NETWORK_LAYER_L3_L7 = "L3_L7"
 
 func feedbackResponseAcceptrecommendedInputType() vapiBindings_.StructType {

@@ -11,13 +11,13 @@
 package sessions
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Statistics#create.
+// Possible value for “action“ of method Statistics#create.
 const Statistics_CREATE_ACTION_RESET = "reset"
 
 func statisticsCreateInputType() vapiBindings_.StructType {

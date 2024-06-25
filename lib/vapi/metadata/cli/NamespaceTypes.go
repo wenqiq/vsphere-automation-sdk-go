@@ -11,14 +11,14 @@
 package cli
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 
-// The ``Identity`` class uniquely identifies a namespace in the CLI namespace tree.
+// The “Identity“ class uniquely identifies a namespace in the CLI namespace tree.
 type NamespaceIdentity struct {
 	// The dot-separated path of the namespace containing the namespace in the CLI node tree. For top-level namespace this will be empty.
 	Path string
@@ -41,7 +41,7 @@ func (s *NamespaceIdentity) GetDataValue__() (vapiData_.DataValue, []error) {
 	return dataVal, nil
 }
 
-// The ``Info`` class contains information about a namespace. It includes the identity of the namespace, a description, information children namespaces.
+// The “Info“ class contains information about a namespace. It includes the identity of the namespace, a description, information children namespaces.
 type NamespaceInfo struct {
 	// Basic namespace identity.
 	Identity NamespaceIdentity

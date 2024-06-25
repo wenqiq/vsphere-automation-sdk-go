@@ -11,26 +11,26 @@
 package reconcile
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Status#get.
+// Possible value for “action“ of method Status#get.
 const Status_GET_ACTION_COMPLETE_REINDEXING = "COMPLETE_REINDEXING"
 
-// Possible value for ``action`` of method Status#get.
+// Possible value for “action“ of method Status#get.
 const Status_GET_ACTION_OPENSEARCH_RESTORE = "OPENSEARCH_RESTORE"
 
-// Possible value for ``action`` of method Status#get.
+// Possible value for “action“ of method Status#get.
 const Status_GET_ACTION_PRODUCT_RESTORE = "PRODUCT_RESTORE"
 
-// Possible value for ``action`` of method Status#get.
+// Possible value for “action“ of method Status#get.
 const Status_GET_ACTION_PRODUCT_UPGRADE = "PRODUCT_UPGRADE"
 
-// Possible value for ``action`` of method Status#get.
+// Possible value for “action“ of method Status#get.
 const Status_GET_ACTION_REBALANCE = "REBALANCE"
 
 func statusGetInputType() vapiBindings_.StructType {

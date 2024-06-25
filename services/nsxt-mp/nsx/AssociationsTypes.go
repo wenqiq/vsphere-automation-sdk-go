@@ -11,50 +11,50 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``associatedResourceType`` of method Associations#list.
+// Possible value for “associatedResourceType“ of method Associations#list.
 const Associations_LIST_ASSOCIATED_RESOURCE_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_IPSET = "IPSet"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_MACSET = "MACSet"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_VIRTUALMACHINE = "VirtualMachine"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_DIRECTORYGROUP = "DirectoryGroup"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_VIRTUALNETWORKINTERFACE = "VirtualNetworkInterface"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_TRANSPORTNODE = "TransportNode"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_IPADDRESS = "IPAddress"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_CLOUDNATIVESERVICEINSTANCE = "CloudNativeServiceInstance"
 
-// Possible value for ``resourceType`` of method Associations#list.
+// Possible value for “resourceType“ of method Associations#list.
 const Associations_LIST_RESOURCE_TYPE_PHYSICALSERVER = "PhysicalServer"
 
 func associationsListInputType() vapiBindings_.StructType {

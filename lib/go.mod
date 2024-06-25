@@ -1,8 +1,8 @@
-module github.com/zhengxiexie/vsphere-automation-sdk-go/lib
+module github.com/wenqiq/vsphere-automation-sdk-go/lib
 
 go 1.17
 
-require github.com/zhengxiexie/vsphere-automation-sdk-go/runtime v0.7.1-0.20240611083326-25a4e1834c4d
+require github.com/wenqiq/vsphere-automation-sdk-go/runtime v0.7.1-0.20240611083326-25a4e1834c4d
 
 require (
 	github.com/beevik/etree v1.1.0 // indirect

@@ -9,19 +9,19 @@
 package metamodel
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Component`` interface providers methods to retrieve metamodel information of a component element.
+// The “Component“ interface providers methods to retrieve metamodel information of a component element.
 //
-//  A component defines a set of functionality that is deployed together and versioned together. For example, all the interfaces that belong to VMware Content Library are part of a single component. A component element describes a component. A component element contains one or more package elements.
+//	A component defines a set of functionality that is deployed together and versioned together. For example, all the interfaces that belong to VMware Content Library are part of a single component. A component element describes a component. A component element contains one or more package elements.
 //
-//  The methods for package elements are provided by interface Package.
+//	The methods for package elements are provided by interface Package.
 type ComponentClient interface {
 
 	// Returns the identifiers for the component elements that are registered with the infrastructure.

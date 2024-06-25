@@ -9,19 +9,19 @@
 package resource
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Model`` interface provides methods to retrieve information about models.
+// The “Model“ interface provides methods to retrieve information about models.
 //
-//  A structure is used as a model if it is used for persisting data about an entity. Some of the fields in the model structure are also used for creating indexes for querying.
+//	A structure is used as a model if it is used for persisting data about an entity. Some of the fields in the model structure are also used for creating indexes for querying.
 //
-//  One or more services can operate on the same resource type. One or more services can provide the model structure for an entity of this resource type. Using ``Model`` interface you can retrieve the list of all the structure elements that are model structures for a given resource type.
+//	One or more services can operate on the same resource type. One or more services can provide the model structure for an entity of this resource type. Using ``Model`` interface you can retrieve the list of all the structure elements that are model structures for a given resource type.
 type ModelClient interface {
 
 	// Returns the set of identifiers for the structure elements that are models for the resource type corresponding to ``resource_id``.

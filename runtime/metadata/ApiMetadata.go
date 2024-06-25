@@ -5,8 +5,8 @@ package metadata
 
 import (
 	"encoding/json"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/metadata/info"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/metadata/info"
 	"io/ioutil"
 )
 

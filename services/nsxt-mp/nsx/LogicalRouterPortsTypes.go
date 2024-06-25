@@ -11,35 +11,35 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERUPLINKPORT = "LogicalRouterUpLinkPort"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERDOWNLINKPORT = "LogicalRouterDownLinkPort"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERLINKPORTONTIER0 = "LogicalRouterLinkPortOnTIER0"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERLINKPORTONTIER1 = "LogicalRouterLinkPortOnTIER1"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERLOOPBACKPORT = "LogicalRouterLoopbackPort"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERIPTUNNELPORT = "LogicalRouterIPTunnelPort"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERCENTRALIZEDSERVICEPORT = "LogicalRouterCentralizedServicePort"
 
-// Possible value for ``resourceType`` of method LogicalRouterPorts#list.
+// Possible value for “resourceType“ of method LogicalRouterPorts#list.
 const LogicalRouterPorts_LIST_RESOURCE_TYPE_LOGICALROUTERGRETUNNELPORT = "LogicalRouterGreTunnelPort"
 
 func logicalRouterPortsCreateInputType() vapiBindings_.StructType {

@@ -11,23 +11,23 @@
 package ncp
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``status`` of method Status#get.
+// Possible value for “status“ of method Status#get.
 const Status_GET_STATUS_UNKNOWN = "UNKNOWN"
 
-// Possible value for ``status`` of method Status#get.
+// Possible value for “status“ of method Status#get.
 const Status_GET_STATUS_HEALTHY = "HEALTHY"
 
-// Possible value for ``status`` of method Status#get.
+// Possible value for “status“ of method Status#get.
 const Status_GET_STATUS_DOWN = "DOWN"
 
-// Possible value for ``status`` of method Status#get.
+// Possible value for “status“ of method Status#get.
 const Status_GET_STATUS_DEGRADED = "DEGRADED"
 
 func statusCreateInputType() vapiBindings_.StructType {

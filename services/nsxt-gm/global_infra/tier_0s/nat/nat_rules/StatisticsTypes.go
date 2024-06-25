@@ -11,14 +11,14 @@
 package nat_rules
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Statistics#list.
+// Possible value for “action“ of method Statistics#list.
 const Statistics_LIST_ACTION_AGGREGATE = "aggregate"
 
 func statisticsListInputType() vapiBindings_.StructType {

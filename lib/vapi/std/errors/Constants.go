@@ -4,7 +4,7 @@
 package errors
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
 )
 
 var ERROR_BINDINGS_MAP = map[string]bindings.BindingType{

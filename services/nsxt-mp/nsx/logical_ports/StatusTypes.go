@@ -11,44 +11,44 @@
 package logical_ports
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method Status#get.
+// Possible value for “source“ of method Status#get.
 const Status_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Status#get.
+// Possible value for “source“ of method Status#get.
 const Status_GET_SOURCE_CACHED = "cached"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_VIF = "VIF"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_LOGICALROUTER = "LOGICALROUTER"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_BRIDGEENDPOINT = "BRIDGEENDPOINT"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_DHCP_SERVICE = "DHCP_SERVICE"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_METADATA_PROXY = "METADATA_PROXY"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_L2VPN_SESSION = "L2VPN_SESSION"
 
-// Possible value for ``attachmentType`` of method Status#getall.
+// Possible value for “attachmentType“ of method Status#getall.
 const Status_GETALL_ATTACHMENT_TYPE_NONE = "NONE"
 
-// Possible value for ``source`` of method Status#getall.
+// Possible value for “source“ of method Status#getall.
 const Status_GETALL_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Status#getall.
+// Possible value for “source“ of method Status#getall.
 const Status_GETALL_SOURCE_CACHED = "cached"
 
 func statusGetInputType() vapiBindings_.StructType {

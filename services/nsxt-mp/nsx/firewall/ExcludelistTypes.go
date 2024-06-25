@@ -11,29 +11,29 @@
 package firewall
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``objectType`` of method Excludelist#checkifexists.
+// Possible value for “objectType“ of method Excludelist#checkifexists.
 const Excludelist_CHECKIFEXISTS_OBJECT_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for ``objectType`` of method Excludelist#checkifexists.
+// Possible value for “objectType“ of method Excludelist#checkifexists.
 const Excludelist_CHECKIFEXISTS_OBJECT_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for ``objectType`` of method Excludelist#checkifexists.
+// Possible value for “objectType“ of method Excludelist#checkifexists.
 const Excludelist_CHECKIFEXISTS_OBJECT_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
-// Possible value for ``objectType`` of method Excludelist#removemember.
+// Possible value for “objectType“ of method Excludelist#removemember.
 const Excludelist_REMOVEMEMBER_OBJECT_TYPE_NSGROUP = "NSGroup"
 
-// Possible value for ``objectType`` of method Excludelist#removemember.
+// Possible value for “objectType“ of method Excludelist#removemember.
 const Excludelist_REMOVEMEMBER_OBJECT_TYPE_LOGICALPORT = "LogicalPort"
 
-// Possible value for ``objectType`` of method Excludelist#removemember.
+// Possible value for “objectType“ of method Excludelist#removemember.
 const Excludelist_REMOVEMEMBER_OBJECT_TYPE_LOGICALSWITCH = "LogicalSwitch"
 
 func excludelistAddmemberInputType() vapiBindings_.StructType {

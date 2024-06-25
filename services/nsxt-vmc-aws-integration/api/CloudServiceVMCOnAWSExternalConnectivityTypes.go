@@ -11,38 +11,38 @@
 package api
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method CloudServiceVMCOnAWSExternalConnectivity#attachVif.
+// Possible value for “action“ of method CloudServiceVMCOnAWSExternalConnectivity#attachVif.
 const CloudServiceVMCOnAWSExternalConnectivity_ATTACH_VIF_ACTION_ATTACH = "ATTACH"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutes.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutes.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_ADVERTISED_EXTERNAL_ROUTES_CONNECTIVITY_TYPE_DIRECT_CONNECT = "DIRECT_CONNECT"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutes.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutes.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_ADVERTISED_EXTERNAL_ROUTES_CONNECTIVITY_TYPE_DEPLOYMENT_CONNECTIVITY_GROUP = "DEPLOYMENT_CONNECTIVITY_GROUP"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutesInCsvFormatCsv.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutesInCsvFormatCsv.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_ADVERTISED_EXTERNAL_ROUTES_IN_CSV_FORMAT_CSV_CONNECTIVITY_TYPE_DIRECT_CONNECT = "DIRECT_CONNECT"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutesInCsvFormatCsv.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listAdvertisedExternalRoutesInCsvFormatCsv.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_ADVERTISED_EXTERNAL_ROUTES_IN_CSV_FORMAT_CSV_CONNECTIVITY_TYPE_DEPLOYMENT_CONNECTIVITY_GROUP = "DEPLOYMENT_CONNECTIVITY_GROUP"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutes.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutes.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_LEARNED_EXTERNAL_ROUTES_CONNECTIVITY_TYPE_DIRECT_CONNECT = "DIRECT_CONNECT"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutes.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutes.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_LEARNED_EXTERNAL_ROUTES_CONNECTIVITY_TYPE_DEPLOYMENT_CONNECTIVITY_GROUP = "DEPLOYMENT_CONNECTIVITY_GROUP"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutesInCsvFormatCsv.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutesInCsvFormatCsv.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_LEARNED_EXTERNAL_ROUTES_IN_CSV_FORMAT_CSV_CONNECTIVITY_TYPE_DIRECT_CONNECT = "DIRECT_CONNECT"
 
-// Possible value for ``connectivityType`` of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutesInCsvFormatCsv.
+// Possible value for “connectivityType“ of method CloudServiceVMCOnAWSExternalConnectivity#listLearnedExternalRoutesInCsvFormatCsv.
 const CloudServiceVMCOnAWSExternalConnectivity_LIST_LEARNED_EXTERNAL_ROUTES_IN_CSV_FORMAT_CSV_CONNECTIVITY_TYPE_DEPLOYMENT_CONNECTIVITY_GROUP = "DEPLOYMENT_CONNECTIVITY_GROUP"
 
 func cloudServiceVMCOnAWSExternalConnectivityAttachVifInputType() bindings.StructType {

@@ -11,17 +11,17 @@
 package groups
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method PathExpressions#create.
+// Possible value for “action“ of method PathExpressions#create.
 const PathExpressions_CREATE_ACTION_ADD = "add"
 
-// Possible value for ``action`` of method PathExpressions#create.
+// Possible value for “action“ of method PathExpressions#create.
 const PathExpressions_CREATE_ACTION_REMOVE = "remove"
 
 func pathExpressionsCreateInputType() vapiBindings_.StructType {

@@ -11,23 +11,23 @@
 package enforcement_points
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
+// Possible value for “status“ of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_UNKNOWN = "UNKNOWN"
 
-// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
+// Possible value for “status“ of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_HEALTHY = "HEALTHY"
 
-// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
+// Possible value for “status“ of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_DOWN = "DOWN"
 
-// Possible value for ``status`` of method ContainerClusterNcpstatus#list.
+// Possible value for “status“ of method ContainerClusterNcpstatus#list.
 const ContainerClusterNcpstatus_LIST_STATUS_DEGRADED = "DEGRADED"
 
 func containerClusterNcpstatusCreateInputType() vapiBindings_.StructType {

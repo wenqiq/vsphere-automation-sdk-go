@@ -11,44 +11,44 @@
 package logical_switches
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method Status#get.
+// Possible value for “source“ of method Status#get.
 const Status_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Status#get.
+// Possible value for “source“ of method Status#get.
 const Status_GET_SOURCE_CACHED = "cached"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_DEFAULT = "DEFAULT"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_SERVICE_PLANE = "SERVICE_PLANE"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_DHCP_RELAY = "DHCP_RELAY"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_GLOBAL = "GLOBAL"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_INTER_ROUTER = "INTER_ROUTER"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_EVPN = "EVPN"
 
-// Possible value for ``switchType`` of method Status#get.
+// Possible value for “switchType“ of method Status#get.
 const Status_GET_SWITCH_TYPE_DVPG = "DVPG"
 
-// Possible value for ``transportType`` of method Status#get.
+// Possible value for “transportType“ of method Status#get.
 const Status_GET_TRANSPORT_TYPE_OVERLAY = "OVERLAY"
 
-// Possible value for ``transportType`` of method Status#get.
+// Possible value for “transportType“ of method Status#get.
 const Status_GET_TRANSPORT_TYPE_VLAN = "VLAN"
 
 func statusGetInputType() vapiBindings_.StructType {

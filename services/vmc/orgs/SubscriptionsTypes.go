@@ -11,17 +11,17 @@
 package orgs
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	vmcModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/vmc/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	vmcModel "github.com/wenqiq/vsphere-automation-sdk-go/services/vmc/model"
 	"reflect"
 )
 
-// Possible value for ``offerType`` of method Subscriptions#get0.
+// Possible value for “offerType“ of method Subscriptions#get0.
 const Subscriptions_GET_0_OFFER_TYPE_TERM = "TERM"
 
-// Possible value for ``offerType`` of method Subscriptions#get0.
+// Possible value for “offerType“ of method Subscriptions#get0.
 const Subscriptions_GET_0_OFFER_TYPE_ON_DEMAND = "ON_DEMAND"
 
 func subscriptionsCreateInputType() vapiBindings_.StructType {

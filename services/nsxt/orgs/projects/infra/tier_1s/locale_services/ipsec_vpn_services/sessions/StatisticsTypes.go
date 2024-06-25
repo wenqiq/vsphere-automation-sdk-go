@@ -11,20 +11,20 @@
 package sessions
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method Statistics#create.
+// Possible value for “action“ of method Statistics#create.
 const Statistics_CREATE_ACTION_RESET = "reset"
 
-// Possible value for ``source`` of method Statistics#get.
+// Possible value for “source“ of method Statistics#get.
 const Statistics_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Statistics#get.
+// Possible value for “source“ of method Statistics#get.
 const Statistics_GET_SOURCE_CACHED = "cached"
 
 func statisticsCreateInputType() vapiBindings_.StructType {

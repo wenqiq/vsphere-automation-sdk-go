@@ -3,7 +3,7 @@
 
 package bindings
 
-import "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 
 // Structure Base interface that represents a Go language bindings structure.
 type Structure interface {

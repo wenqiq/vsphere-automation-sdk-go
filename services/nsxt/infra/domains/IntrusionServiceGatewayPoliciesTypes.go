@@ -11,23 +11,23 @@
 package domains
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``operation`` of method IntrusionServiceGatewayPolicies#revise.
+// Possible value for “operation“ of method IntrusionServiceGatewayPolicies#revise.
 const IntrusionServiceGatewayPolicies_REVISE_OPERATION_TOP = "insert_top"
 
-// Possible value for ``operation`` of method IntrusionServiceGatewayPolicies#revise.
+// Possible value for “operation“ of method IntrusionServiceGatewayPolicies#revise.
 const IntrusionServiceGatewayPolicies_REVISE_OPERATION_BOTTOM = "insert_bottom"
 
-// Possible value for ``operation`` of method IntrusionServiceGatewayPolicies#revise.
+// Possible value for “operation“ of method IntrusionServiceGatewayPolicies#revise.
 const IntrusionServiceGatewayPolicies_REVISE_OPERATION_AFTER = "insert_after"
 
-// Possible value for ``operation`` of method IntrusionServiceGatewayPolicies#revise.
+// Possible value for “operation“ of method IntrusionServiceGatewayPolicies#revise.
 const IntrusionServiceGatewayPolicies_REVISE_OPERATION_BEFORE = "insert_before"
 
 func intrusionServiceGatewayPoliciesDeleteInputType() vapiBindings_.StructType {

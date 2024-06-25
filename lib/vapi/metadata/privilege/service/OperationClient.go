@@ -9,18 +9,18 @@
 package service
 
 import (
-	vapiMetadataPrivilege_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/privilege"
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiMetadataPrivilege_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/privilege"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Operation`` interface provides methods to retrieve privilege information of an operation element.
+// The “Operation“ interface provides methods to retrieve privilege information of an operation element.
 //
-//  An operation element is said to contain privilege information if there are any privileges assigned to the operation element or if one of the parameter elements contained in it has privileges assigned in privilege definition file.
+//	An operation element is said to contain privilege information if there are any privileges assigned to the operation element or if one of the parameter elements contained in it has privileges assigned in privilege definition file.
 type OperationClient interface {
 
 	// Returns the identifiers for the operation elements contained in the service element corresponding to ``service_id`` that have privilege information.

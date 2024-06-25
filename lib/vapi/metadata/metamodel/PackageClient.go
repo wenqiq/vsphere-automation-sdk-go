@@ -9,17 +9,17 @@
 package metamodel
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Package`` interface provides methods to retrieve metamodel information about a package element in the interface definition language.
+// The “Package“ interface provides methods to retrieve metamodel information about a package element in the interface definition language.
 //
-//  A package is a logical grouping of services, structures and enumerations. A package element describes the package. It contains the service elements, structure elements and enumeration elements that are grouped together.
+//	A package is a logical grouping of services, structures and enumerations. A package element describes the package. It contains the service elements, structure elements and enumeration elements that are grouped together.
 type PackageClient interface {
 
 	// Returns the identifiers for the packages elements that are contained in all the registered component elements.

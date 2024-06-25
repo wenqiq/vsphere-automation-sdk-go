@@ -10,8 +10,8 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/ext"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 )
 
 const (
@@ -47,10 +47,10 @@ func NewWithTracer(tracer opentracing.Tracer) tracing.StartSpan {
 			spanName,
 			ext.RPCServerOption(wireContext))
 
-		//Set tag for the component
+		// Set tag for the component
 		serverSpan.SetTag("component", ComponentTag)
 
-		//Set headers, if header is not present the tag will be set to ""
+		// Set headers, if header is not present the tag will be set to ""
 		serverSpan.SetTag("http.user_agent", r.Header.Get("User-Agent"))
 		serverSpan.SetTag("peer.address", peerAddress(r))
 		serverSpan.SetTag("wire.protocol", protocol)

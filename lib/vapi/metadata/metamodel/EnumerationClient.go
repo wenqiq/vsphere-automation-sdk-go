@@ -9,17 +9,17 @@
 package metamodel
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Enumeration`` interface provides methods to retrieve metamodel information about an enumeration element in the interface definition language.
+// The “Enumeration“ interface provides methods to retrieve metamodel information about an enumeration element in the interface definition language.
 //
-//  The ``Enumeration`` has a list of enumeration value elements.
+//	The ``Enumeration`` has a list of enumeration value elements.
 type EnumerationClient interface {
 
 	// Returns the identifiers for the enumeration elements that are contained in all the package elements, service elements and structure elements.

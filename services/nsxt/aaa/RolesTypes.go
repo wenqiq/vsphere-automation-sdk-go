@@ -11,23 +11,23 @@
 package aaa
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``scope`` of method Roles#list.
+// Possible value for “scope“ of method Roles#list.
 const Roles_LIST_SCOPE_ROOT = "ROOT"
 
-// Possible value for ``scope`` of method Roles#list.
+// Possible value for “scope“ of method Roles#list.
 const Roles_LIST_SCOPE_ORG = "ORG"
 
-// Possible value for ``scope`` of method Roles#list.
+// Possible value for “scope“ of method Roles#list.
 const Roles_LIST_SCOPE_PROJECT = "PROJECT"
 
-// Possible value for ``scope`` of method Roles#list.
+// Possible value for “scope“ of method Roles#list.
 const Roles_LIST_SCOPE_VPC = "VPC"
 
 func rolesCloneInputType() vapiBindings_.StructType {

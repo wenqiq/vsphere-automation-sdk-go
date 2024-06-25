@@ -4,9 +4,9 @@
 package introspection
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
 )
 
 type ProviderApiInterface struct {
@@ -80,7 +80,7 @@ func (providerIntrospectionApiInterface *ProviderApiInterface) Identifier() core
 }
 
 func (providerIntrospectionApiInterface *ProviderApiInterface) Definition() core.InterfaceDefinition {
-	//refactor this
+	// refactor this
 	var methodIdentifiers = make(map[string]core.MethodIdentifier)
 	for key, _ := range providerIntrospectionApiInterface.methodDefs {
 		methodIdentifiers[key.Name()] = key

@@ -11,20 +11,20 @@
 package upgrade_units
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``selectionStatus`` of method AggregateInfo#list.
+// Possible value for “selectionStatus“ of method AggregateInfo#list.
 const AggregateInfo_LIST_SELECTION_STATUS_SELECTED = "SELECTED"
 
-// Possible value for ``selectionStatus`` of method AggregateInfo#list.
+// Possible value for “selectionStatus“ of method AggregateInfo#list.
 const AggregateInfo_LIST_SELECTION_STATUS_DESELECTED = "DESELECTED"
 
-// Possible value for ``selectionStatus`` of method AggregateInfo#list.
+// Possible value for “selectionStatus“ of method AggregateInfo#list.
 const AggregateInfo_LIST_SELECTION_STATUS_ALL = "ALL"
 
 func aggregateInfoListInputType() vapiBindings_.StructType {

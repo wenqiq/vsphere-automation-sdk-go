@@ -3,7 +3,7 @@
 
 package security
 
-import "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 
 type PrivilegeProvider interface {
 	GetPrivilegeInfo(fullyQualifiedOperName string, inputValue data.DataValue) (map[ResourceIdentifier][]string, error)

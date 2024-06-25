@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"strconv"
 )
 
@@ -82,8 +82,8 @@ func (errorValue *ErrorValue) Type() DataType {
 }
 
 type IntegerValue struct {
-	//Should it map to int, int8, int64?
-	//this is int64 because reflection picks biggest size available.
+	// Should it map to int, int8, int64?
+	// this is int64 because reflection picks biggest size available.
 	value int64
 }
 

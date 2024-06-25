@@ -11,20 +11,20 @@
 package trust_management
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``oidcType`` of method OidcUris#list.
+// Possible value for “oidcType“ of method OidcUris#list.
 const OidcUris_LIST_OIDC_TYPE_VCENTER = "vcenter"
 
-// Possible value for ``oidcType`` of method OidcUris#list.
+// Possible value for “oidcType“ of method OidcUris#list.
 const OidcUris_LIST_OIDC_TYPE_WS_ONE = "ws_one"
 
-// Possible value for ``oidcType`` of method OidcUris#list.
+// Possible value for “oidcType“ of method OidcUris#list.
 const OidcUris_LIST_OIDC_TYPE_CSP = "csp"
 
 func oidcUrisCreateInputType() vapiBindings_.StructType {

@@ -11,17 +11,17 @@
 package interfaces
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method Statistics#get.
+// Possible value for “source“ of method Statistics#get.
 const Statistics_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Statistics#get.
+// Possible value for “source“ of method Statistics#get.
 const Statistics_GET_SOURCE_CACHED = "cached"
 
 func statisticsGetInputType() vapiBindings_.StructType {

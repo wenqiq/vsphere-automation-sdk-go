@@ -4,10 +4,10 @@
 package auth
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std"
+	"github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
 )
 
 type UserPasswordAuthenticationHandler struct {
@@ -34,8 +34,8 @@ func (u *UserPasswordAuthenticationHandler) Authenticate(ctx core.SecurityContex
 			return nil, getUnauthenticatedError()
 		}
 	}
-	//Returning nil as error so the AuthenticationFilter can continue and try
-	//with the next auth handler if one exists
+	// Returning nil as error so the AuthenticationFilter can continue and try
+	// with the next auth handler if one exists
 	return nil, nil
 }
 

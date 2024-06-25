@@ -5,9 +5,9 @@ package data
 
 import (
 	"errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"strconv"
 )
 
@@ -182,7 +182,7 @@ func (errorDefinition ErrorDefinition) FieldNames() []string {
 }
 
 func (errorDefinition ErrorDefinition) Field(field string) DataDefinition {
-	//TODO:
+	// TODO:
 	// zero value of pointer is nil
 	// what is the zero value of a structure
 	var value, ok = errorDefinition.fields[field]
@@ -409,7 +409,7 @@ func (structDefinition StructDefinition) FieldNames() []string {
 }
 
 func (structDefinition StructDefinition) Field(field string) DataDefinition {
-	//TODO:
+	// TODO:
 	// zero value of pointer is nil
 	// what is the zero value of a structure
 	var value, ok = structDefinition.fields[field]
@@ -600,7 +600,7 @@ func (opaqueDefinition OpaqueDefinition) Validate(value DataValue) []error {
 }
 
 type OptionalDefinition struct {
-	//cannot be nil
+	// cannot be nil
 	optionalElementType DataDefinition
 }
 
@@ -637,7 +637,7 @@ func (optionalDefinition OptionalDefinition) Validate(value DataValue) []error {
 }
 
 func (optionalDefinition OptionalDefinition) String() string {
-	//TODO:sreeshas
+	// TODO:sreeshas
 	// implement this
 	return ""
 }

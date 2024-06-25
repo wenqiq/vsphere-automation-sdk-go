@@ -11,13 +11,13 @@
 package cli
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 
-// The ``ComponentInfo`` is an aggregated class for CLI commands and namespaces information.
+// The “ComponentInfo“ is an aggregated class for CLI commands and namespaces information.
 type ComponentInfo struct {
 	// Information for all CLI namespaces of a component
 	Namespaces []NamespaceInfo

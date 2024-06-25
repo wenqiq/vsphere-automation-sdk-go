@@ -11,17 +11,17 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``onError`` of method ImportK8sNpToDfw#create.
+// Possible value for “onError“ of method ImportK8sNpToDfw#create.
 const ImportK8sNpToDfw_CREATE_ON_ERROR_ABORT = "ABORT"
 
-// Possible value for ``onError`` of method ImportK8sNpToDfw#create.
+// Possible value for “onError“ of method ImportK8sNpToDfw#create.
 const ImportK8sNpToDfw_CREATE_ON_ERROR_CONTINUE = "CONTINUE"
 
 func importK8sNpToDfwCreateInputType() vapiBindings_.StructType {

@@ -11,23 +11,23 @@
 package pre_upgrade_checks
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``originType`` of method Failures#list.
+// Possible value for “originType“ of method Failures#list.
 const Failures_LIST_ORIGIN_TYPE_COMPONENT = "COMPONENT"
 
-// Possible value for ``originType`` of method Failures#list.
+// Possible value for “originType“ of method Failures#list.
 const Failures_LIST_ORIGIN_TYPE_UPGRADE_UNIT = "UPGRADE_UNIT"
 
-// Possible value for ``type`` of method Failures#list.
+// Possible value for “type“ of method Failures#list.
 const Failures_LIST_TYPE_FAILURE = "FAILURE"
 
-// Possible value for ``type`` of method Failures#list.
+// Possible value for “type“ of method Failures#list.
 const Failures_LIST_TYPE_WARNING = "WARNING"
 
 func failuresListInputType() vapiBindings_.StructType {

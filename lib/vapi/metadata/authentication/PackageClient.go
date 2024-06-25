@@ -9,17 +9,17 @@
 package authentication
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Package`` interface provides methods to retrieve authentication information of a package element.
+// The “Package“ interface provides methods to retrieve authentication information of a package element.
 //
-//  A package element is said to contain authentication information if there is a default authentication assigned to all service elements contained in the package element or if one of the service element contained in this package element has authentication information.
+//	A package element is said to contain authentication information if there is a default authentication assigned to all service elements contained in the package element or if one of the service element contained in this package element has authentication information.
 type PackageClient interface {
 
 	// Returns the identifiers for the package elements that have authentication information.

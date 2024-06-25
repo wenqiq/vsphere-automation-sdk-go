@@ -9,17 +9,17 @@
 package metamodel
 
 import (
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``MetadataIdentifier`` interface provides string constants that can be used as identifiers for the metadata elements.
+// The “MetadataIdentifier“ interface provides string constants that can be used as identifiers for the metadata elements.
 //
-//  Most of the types in com.vmware.vapi.metadata.metamodel package has a metadata field whose type is ``Map<String, ElementMap>``. MetadataIdentifier contains the identifiers used in the keys of the above Map type.
+//	Most of the types in com.vmware.vapi.metadata.metamodel package has a metadata field whose type is ``Map<String, ElementMap>``. MetadataIdentifier contains the identifiers used in the keys of the above Map type.
 type MetadataIdentifierClient interface {
 }
 

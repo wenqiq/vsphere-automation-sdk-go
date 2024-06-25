@@ -6,13 +6,13 @@ package msg
 import (
 	"encoding/json"
 	"errors"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 
 type JsonRpc20Response struct {
-	//A String specifying the version of the JSON-RPC protocol. MUST be exactly "2.0"
+	// A String specifying the version of the JSON-RPC protocol. MUST be exactly "2.0"
 	version string
 
 	/**
@@ -65,10 +65,10 @@ func (j JsonRpc20Response) Error() map[string]interface{} {
 func getJsonRPCIdValue(id interface{}) (interface{}, error) {
 	var idString, isString = id.(string)
 	if !isString {
-		//check if id is an int.
+		// check if id is an int.
 		var jsonNumber, numError = id.(json.Number)
 		if !numError {
-			//id is not string or json.Number. check if its nil
+			// id is not string or json.Number. check if its nil
 			if reflect.TypeOf(id) != nil {
 				log.Errorf("JSON RPC request id must be string or int or nil")
 				return nil, errors.New("JSON RPC request id must be string or int or nil")
@@ -76,7 +76,7 @@ func getJsonRPCIdValue(id interface{}) (interface{}, error) {
 				return nil, nil
 			}
 		} else {
-			//check if number is int64
+			// check if number is int64
 			var idInt, intErr = jsonNumber.Int64()
 			if intErr != nil {
 				log.Errorf("JSON RPC request id must be string or int or nil")
@@ -91,7 +91,7 @@ func getJsonRPCIdValue(id interface{}) (interface{}, error) {
 	}
 }
 
-//DeSerializeResponse gets JsonRpc20Response object from provided string or byte array json
+// DeSerializeResponse gets JsonRpc20Response object from provided string or byte array json
 func DeSerializeResponse(response interface{}) (JsonRpc20Response, *JsonRpc20Error) {
 	responseObj, err := DeSerializeJson(response)
 	if err != nil {
@@ -100,7 +100,7 @@ func DeSerializeResponse(response interface{}) (JsonRpc20Response, *JsonRpc20Err
 	return GetJsonRpc20Response(responseObj)
 }
 
-//GetJsonRpc20Response gets JsonRpc20Response object from unmarshalled json map
+// GetJsonRpc20Response gets JsonRpc20Response object from unmarshalled json map
 func GetJsonRpc20Response(response map[string]interface{}) (JsonRpc20Response, *JsonRpc20Error) {
 	var version string
 	if versionValue, ok := response[lib.JSONRPC]; ok {

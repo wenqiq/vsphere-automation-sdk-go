@@ -11,20 +11,20 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``operation`` of method FirewallIpReputationFeed#create.
+// Possible value for “operation“ of method FirewallIpReputationFeed#create.
 const FirewallIpReputationFeed_CREATE_OPERATION_ENABLE_AUTO_DOWNLOAD = "enable_auto_download"
 
-// Possible value for ``operation`` of method FirewallIpReputationFeed#create.
+// Possible value for “operation“ of method FirewallIpReputationFeed#create.
 const FirewallIpReputationFeed_CREATE_OPERATION_DISABLE_AUTO_DOWNLOAD = "disable_auto_download"
 
-// Possible value for ``operation`` of method FirewallIpReputationFeed#create.
+// Possible value for “operation“ of method FirewallIpReputationFeed#create.
 const FirewallIpReputationFeed_CREATE_OPERATION_DOWNLOAD = "download"
 
 func firewallIpReputationFeedCreateInputType() vapiBindings_.StructType {

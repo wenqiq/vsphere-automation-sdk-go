@@ -11,26 +11,26 @@
 package ports
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``bgpNeighborType`` of method Status#get.
+// Possible value for “bgpNeighborType“ of method Status#get.
 const Status_GET_BGP_NEIGHBOR_TYPE_INTER_SR = "INTER_SR"
 
-// Possible value for ``bgpNeighborType`` of method Status#get.
+// Possible value for “bgpNeighborType“ of method Status#get.
 const Status_GET_BGP_NEIGHBOR_TYPE_USER = "USER"
 
-// Possible value for ``source`` of method Status#get.
+// Possible value for “source“ of method Status#get.
 const Status_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method Status#get.
+// Possible value for “source“ of method Status#get.
 const Status_GET_SOURCE_CACHED = "cached"
 
-// Possible value for ``statsType`` of method Status#get.
+// Possible value for “statsType“ of method Status#get.
 const Status_GET_STATS_TYPE_STATS = "DATAPATH_STATS"
 
 func statusGetInputType() vapiBindings_.StructType {

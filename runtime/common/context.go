@@ -5,8 +5,8 @@ package common
 
 import (
 	"github.com/google/uuid"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
 )
 
 func NewDefaultApplicationContext() *core.ApplicationContext {

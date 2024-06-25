@@ -4,12 +4,12 @@
 package client
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers/rest"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client/internal"
-	vapiHttp "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/http"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers/rest"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client/internal"
+	vapiHttp "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/http"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
 	"net/http"
 )
 

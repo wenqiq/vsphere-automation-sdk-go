@@ -11,25 +11,25 @@
 package infra
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 
-// Possible value for ``action`` of method FullSyncAction#create.
+// Possible value for “action“ of method FullSyncAction#create.
 const FullSyncAction_CREATE_ACTION_REQUEST_FULL_SYNC = "request_full_sync"
 
-// Possible value for ``action`` of method FullSyncAction#create.
+// Possible value for “action“ of method FullSyncAction#create.
 const FullSyncAction_CREATE_ACTION_REQUEST_NOTIFICATIONS_FULL_SYNC = "request_notifications_full_sync"
 
-// Possible value for ``action`` of method FullSyncAction#create.
+// Possible value for “action“ of method FullSyncAction#create.
 const FullSyncAction_CREATE_ACTION_ABORT_CURRENT_SYNC = "abort_current_sync"
 
-// Possible value for ``action`` of method FullSyncAction#create.
+// Possible value for “action“ of method FullSyncAction#create.
 const FullSyncAction_CREATE_ACTION_PURGE_HISTORY = "purge_history"
 
-// Possible value for ``syncType`` of method FullSyncAction#create.
+// Possible value for “syncType“ of method FullSyncAction#create.
 const FullSyncAction_CREATE_SYNC_TYPE_SYNC = "gm_to_lm_full_sync"
 
 func fullSyncActionCreateInputType() vapiBindings_.StructType {

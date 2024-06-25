@@ -11,14 +11,14 @@
 package onboarding
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``feature`` of method InvalidConfigDetails#get.
+// Possible value for “feature“ of method InvalidConfigDetails#get.
 const InvalidConfigDetails_GET_FEATURE_LB = "LB"
 
 func invalidConfigDetailsGetInputType() vapiBindings_.StructType {

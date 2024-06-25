@@ -11,17 +11,17 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method IpSets#create0.
+// Possible value for “action“ of method IpSets#create0.
 const IpSets_CREATE_0_ACTION_ADD_IP = "add_ip"
 
-// Possible value for ``action`` of method IpSets#create0.
+// Possible value for “action“ of method IpSets#create0.
 const IpSets_CREATE_0_ACTION_REMOVE_IP = "remove_ip"
 
 func ipSetsCreateInputType() vapiBindings_.StructType {

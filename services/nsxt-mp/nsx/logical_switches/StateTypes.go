@@ -11,23 +11,23 @@
 package logical_switches
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``status`` of method State#list.
+// Possible value for “status“ of method State#list.
 const State_LIST_STATUS_PENDING = "PENDING"
 
-// Possible value for ``status`` of method State#list.
+// Possible value for “status“ of method State#list.
 const State_LIST_STATUS_IN_PROGRESS = "IN_PROGRESS"
 
-// Possible value for ``status`` of method State#list.
+// Possible value for “status“ of method State#list.
 const State_LIST_STATUS_PARTIAL_SUCCESS = "PARTIAL_SUCCESS"
 
-// Possible value for ``status`` of method State#list.
+// Possible value for “status“ of method State#list.
 const State_LIST_STATUS_SUCCESS = "SUCCESS"
 
 func stateGetInputType() vapiBindings_.StructType {

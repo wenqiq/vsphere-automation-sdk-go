@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
 )
 
 type OperationMetadata struct {
@@ -55,6 +55,7 @@ func (meta OperationMetadata) RestMetadata() OperationRestMetadata {
 // fields and fieldsNameMap defines the bindingtype and name of field respectively of @BodyField annotation
 // Rest metadata for name and types of query, header and
 // body parameters of an operation. Example:
+//
 //	meta.ParamsTypeMap["input.nested.bparam"] = bindings.NewListType(bindings.NewStringType(), reflect.TypeOf([]string{}))
 //	meta.ParamsTypeMap["input.nested.hparam"] = bindings.NewStringType()
 //	meta.ParamsTypeMap["input.nested.qparam"] = bindings.NewStringType()
@@ -69,19 +70,19 @@ type OperationRestMetadata struct {
 	fieldNameMap map[string]string
 	// Flattened types of all parameters. Key is fully qualified field name
 	paramsTypeMap map[string]bindings.BindingType
-	//Names of rest parameter to fully qualified canonical name of the field
+	// Names of rest parameter to fully qualified canonical name of the field
 	pathParamsNameMap    map[string]string
 	queryParamsNameMap   map[string]string
 	headerParamsNameMap  map[string]string
 	dispatchHeaderParams map[string]string
 	bodyFieldsMap        map[string]string
-	//Encoded dispatch parameters
+	// Encoded dispatch parameters
 	dispatchParam string
-	//Fully qualified field name canonical name of body param
+	// Fully qualified field name canonical name of body param
 	bodyParamActualName string
-	//HTTP action for the operation
+	// HTTP action for the operation
 	httpMethod string
-	//HTTP URL for the operation
+	// HTTP URL for the operation
 	urlTemplate string
 	// Content-Type that operation consumes
 	operationConsumes string

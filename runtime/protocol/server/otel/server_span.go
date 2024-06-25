@@ -1,12 +1,15 @@
-/* Copyright © 2022-2023 VMware, Inc. All Rights Reserved.
-   SPDX-License-Identifier: BSD-2-Clause */
+/*
+Copyright © 2022-2023 VMware, Inc. All Rights Reserved.
+
+	SPDX-License-Identifier: BSD-2-Clause
+*/
 package otel
 
 import (
 	"reflect"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 	"go.opentelemetry.io/otel/codes"
 	semconv "go.opentelemetry.io/otel/semconv/v1.12.0"
 	"go.opentelemetry.io/otel/trace"

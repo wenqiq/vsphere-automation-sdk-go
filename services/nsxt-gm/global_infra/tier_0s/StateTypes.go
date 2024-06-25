@@ -11,20 +11,20 @@
 package tier_0s
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``type`` of method State#get.
+// Possible value for “type“ of method State#get.
 const State_GET_TYPE_GATEWAY_STATE = "GATEWAY_STATE"
 
-// Possible value for ``type`` of method State#get.
+// Possible value for “type“ of method State#get.
 const State_GET_TYPE_GATEWAY_STATUS = "GATEWAY_STATUS"
 
-// Possible value for ``type`` of method State#get.
+// Possible value for “type“ of method State#get.
 const State_GET_TYPE_IPV6_STATUS = "IPV6_STATUS"
 
 func stateGetInputType() vapiBindings_.StructType {

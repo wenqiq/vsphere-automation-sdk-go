@@ -11,77 +11,77 @@
 package transport_nodes
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_0 = "0"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_NO_DIAGNOSTIC = "NO_DIAGNOSTIC"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_1 = "1"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_CONTROL_DETECTION_TIME_EXPIRED = "CONTROL_DETECTION_TIME_EXPIRED"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_2 = "2"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_ECHO_FUNCTION_FAILED = "ECHO_FUNCTION_FAILED"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_3 = "3"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_NEIGHBOR_SIGNALED_SESSION_DOWN = "NEIGHBOR_SIGNALED_SESSION_DOWN"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_4 = "4"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_FORWARDING_PLANE_RESET = "FORWARDING_PLANE_RESET"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_5 = "5"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_PATH_DOWN = "PATH_DOWN"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_6 = "6"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_CONCATENATED_PATH_DOWN = "CONCATENATED_PATH_DOWN"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_7 = "7"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_ADMINISTRATIVELY_DOWN = "ADMINISTRATIVELY_DOWN"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_8 = "8"
 
-// Possible value for ``bfdDiagnosticCode`` of method RemoteTransportNodeStatus#list.
+// Possible value for “bfdDiagnosticCode“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_BFD_DIAGNOSTIC_CODE_REVERSE_CONCATENATED_PATH_DOWN = "REVERSE_CONCATENATED_PATH_DOWN"
 
-// Possible value for ``source`` of method RemoteTransportNodeStatus#list.
+// Possible value for “source“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method RemoteTransportNodeStatus#list.
+// Possible value for “source“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_SOURCE_CACHED = "cached"
 
-// Possible value for ``tunnelStatus`` of method RemoteTransportNodeStatus#list.
+// Possible value for “tunnelStatus“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_TUNNEL_STATUS_UP = "UP"
 
-// Possible value for ``tunnelStatus`` of method RemoteTransportNodeStatus#list.
+// Possible value for “tunnelStatus“ of method RemoteTransportNodeStatus#list.
 const RemoteTransportNodeStatus_LIST_TUNNEL_STATUS_DOWN = "DOWN"
 
 func remoteTransportNodeStatusListInputType() vapiBindings_.StructType {

@@ -6,8 +6,8 @@ package security
 import (
 	"crypto"
 	"encoding/base64"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 )
 
 // JSONSsoSigner is used for signing Json request messages.
@@ -23,36 +23,38 @@ func NewJSONSsoSigner() *JSONSsoSigner {
 // token is then added to the security context block of the execution
 // context. A timestamp is also added to guard against replay attacks
 // Sample input security context:
-// {
-//    'schemeId': 'SAML_TOKEN',
-//    'privateKey': <PRIVATE_KEY>,
-//    'samlToken': <SAML_TOKEN>,
-//    'signatureAlgorithm': <ALGORITHM>,
-// }
+//
+//	{
+//	   'schemeId': 'SAML_TOKEN',
+//	   'privateKey': <PRIVATE_KEY>,
+//	   'samlToken': <SAML_TOKEN>,
+//	   'signatureAlgorithm': <ALGORITHM>,
+//	}
 //
 // Security context block before signing:
-// {
-//    'schemeId': 'SAML_TOKEN',
-//    'signatureAlgorithm': <ALGORITHM>,
-//    'timestamp': {
-//        'created': '2012-10-26T12:24:18.941Z',
-//        'expires': '2012-10-26T12:44:18.941Z',
-// }
 //
+//	{
+//	   'schemeId': 'SAML_TOKEN',
+//	   'signatureAlgorithm': <ALGORITHM>,
+//	   'timestamp': {
+//	       'created': '2012-10-26T12:24:18.941Z',
+//	       'expires': '2012-10-26T12:44:18.941Z',
+//	}
 //
 // Security context block after signing:
-// {
-//    'schemeId': 'SAML_TOKEN',
-//    'signatureAlgorithm': <ALGORITHM>,
-//    'signature': {
-//        'samlToken': <SAML_TOKEN>,
-//        'value': <DIGEST>
-//    }
-//    'timestamp': {
-//        'created': '2012-10-26T12:24:18.941Z',
-//        'expires': '2012-10-26T12:44:18.941Z',
-//    }
-// }
+//
+//	{
+//	   'schemeId': 'SAML_TOKEN',
+//	   'signatureAlgorithm': <ALGORITHM>,
+//	   'signature': {
+//	       'samlToken': <SAML_TOKEN>,
+//	       'value': <DIGEST>
+//	   }
+//	   'timestamp': {
+//	       'created': '2012-10-26T12:24:18.941Z',
+//	       'expires': '2012-10-26T12:44:18.941Z',
+//	   }
+//	}
 func (j *JSONSsoSigner) Process(jsonRequestBody *map[string]interface{}) error {
 	securityContext, err := GetSecurityContext(jsonRequestBody)
 	if err != nil {

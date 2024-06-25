@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0fcd89-1b04-421c-883e-3feb4eeffd7a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/lib/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/lib/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/nsxt-mp/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/nsxt-mp/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/nsxt/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/services/nsxt/go.mod" afterDir="false" />
-    </list>
+    <list default="true" id="af0fcd89-1b04-421c-883e-3feb4eeffd7a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,46 +14,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;zhengxiexie&quot;
-  }
-}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/zhengxiexie/vsphere-automation-sdk-go.git&quot;,
-    &quot;accountId&quot;: &quot;51c8b179-5a16-4b74-a95c-3060d647b548&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/services/nsxt/orgs/projects/VpcConnectivityProfilesClient.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/services/nsxt/orgs/projects/SharedWithMeTypes.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/services/nsxt/orgs/projects/VpcConnectivityProfilesTypes.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/services/nsxt-mp/nsx/model/ModelPackageTypes.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/services/nsxt/orgs/projects/VpcsClient.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../pkg/mod/github.com/vmware/vsphere-automation-sdk-go/runtime@v0.7.0/bindings/util.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/services/nsxt/model/ModelPackageTypes.go" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/services/nsxt/orgs/projects/VpcsTypes.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="2hYWQuXbYONwHapR9qQAPngVWaq" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="compactDirectories" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
-    <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/xizheng/Code/vsphere-automation-sdk-go&quot;
-  }
-}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -68,7 +43,15 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="VgoProject">
-    <settings-migrated>true</settings-migrated>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -9,18 +9,18 @@
 package service
 
 import (
-	vapiMetadataAuthentication_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/authentication"
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiMetadataAuthentication_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/authentication"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Operation`` interface provides methods to retrieve authentication information of an operation element.
+// The “Operation“ interface provides methods to retrieve authentication information of an operation element.
 //
-//  An operation element is said to contain authentication information if authentication schemes are specified in the authentication definition file.
+//	An operation element is said to contain authentication information if authentication schemes are specified in the authentication definition file.
 type OperationClient interface {
 
 	// Returns the identifiers for the operation elements contained in the service element corresponding to ``service_id`` that have authentication information.

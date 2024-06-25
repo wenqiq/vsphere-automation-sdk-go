@@ -11,23 +11,23 @@
 package livetraces
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``actionType`` of method Results#get.
+// Possible value for “actionType“ of method Results#get.
 const Results_GET_ACTION_TYPE_TRACE = "TRACE"
 
-// Possible value for ``actionType`` of method Results#get.
+// Possible value for “actionType“ of method Results#get.
 const Results_GET_ACTION_TYPE_PKTCAP = "PKTCAP"
 
-// Possible value for ``actionType`` of method Results#get.
+// Possible value for “actionType“ of method Results#get.
 const Results_GET_ACTION_TYPE_COUNT = "COUNT"
 
-// Possible value for ``actionType`` of method Results#get.
+// Possible value for “actionType“ of method Results#get.
 const Results_GET_ACTION_TYPE_DATAPATH_STATS = "DATAPATH_STATS"
 
 func resultsGetInputType() vapiBindings_.StructType {

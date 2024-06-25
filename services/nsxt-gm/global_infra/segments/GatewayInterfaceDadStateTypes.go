@@ -11,17 +11,17 @@
 package segments
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_global_policyModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method GatewayInterfaceDadState#get.
+// Possible value for “source“ of method GatewayInterfaceDadState#get.
 const GatewayInterfaceDadState_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method GatewayInterfaceDadState#get.
+// Possible value for “source“ of method GatewayInterfaceDadState#get.
 const GatewayInterfaceDadState_GET_SOURCE_CACHED = "cached"
 
 func gatewayInterfaceDadStateGetInputType() vapiBindings_.StructType {

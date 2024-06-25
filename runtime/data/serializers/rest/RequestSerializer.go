@@ -11,15 +11,15 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/security"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
 )
 
 type Request struct {
@@ -427,7 +427,8 @@ func getSessionCtxHeaders(securityContext core.SecurityContext) (map[string]inte
 }
 
 // Deprecated: use OauthSecContextSerializer instead
-//  Get the authorization headers for oauth security context.
+//
+//	Get the authorization headers for oauth security context.
 func getOauthCtxHeaders(securityContext core.SecurityContext) (map[string]interface{}, error) {
 	oauthToken, err := GetSecurityCtxStrValue(securityContext, security.ACCESS_TOKEN)
 	if err != nil {

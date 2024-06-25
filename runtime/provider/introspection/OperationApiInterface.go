@@ -4,10 +4,10 @@
 package introspection
 
 import (
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/log"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
 )
 
 type OperationApiInterface struct {
@@ -115,8 +115,8 @@ func (operationApiInterface *OperationApiInterface) Invoke(ctx *core.ExecutionCo
 	return method(ctx, methodID, input)
 }
 
-//TODO:
-//refactor this
+// TODO:
+// refactor this
 func (operationApiInterface *OperationApiInterface) getListOfMethodIds() map[string]core.MethodIdentifier {
 	var methods = make(map[string]core.MethodIdentifier)
 	for key, _ := range operationApiInterface.methods {

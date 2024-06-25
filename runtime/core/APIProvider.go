@@ -3,7 +3,7 @@
 
 package core
 
-import "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
+import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
 
 // APIProvider defines vAPI provider contract
 type APIProvider interface {

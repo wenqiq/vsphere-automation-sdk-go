@@ -1,11 +1,11 @@
-module github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/examples/stream
+module github.com/wenqiq/vsphere-automation-sdk-go/runtime/examples/stream
 
 go 1.17
 
 require (
 	github.com/buger/jsonparser v1.1.1
-	github.com/zhengxiexie/vsphere-automation-sdk-go/runtime v0.0.0-20220620141103-6f5e45110975
-	github.com/zhengxiexie/vsphere-automation-sdk-go/lib v0.0.0-20220620214802-a2bf3241de73
+	github.com/wenqiq/vsphere-automation-sdk-go/runtime v0.0.0-20220620141103-6f5e45110975
+	github.com/wenqiq/vsphere-automation-sdk-go/lib v0.0.0-20220620214802-a2bf3241de73
 )
 
 require (

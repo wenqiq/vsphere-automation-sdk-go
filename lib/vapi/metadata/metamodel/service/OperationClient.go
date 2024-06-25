@@ -9,16 +9,16 @@
 package service
 
 import (
-	vapiMetadataMetamodel_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
-	vapiStdErrors_ "github.com/zhengxiexie/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/core"
-	vapiProtocolClient_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol/client"
+	vapiMetadataMetamodel_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
+	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2
 
-// The ``Operation`` interface provides methods to retrieve metamodel information of an operation element in the interface definition language.
+// The “Operation“ interface provides methods to retrieve metamodel information of an operation element in the interface definition language.
 type OperationClient interface {
 
 	// Returns the identifiers for the operation elements that are defined in the scope of ``service_id``.

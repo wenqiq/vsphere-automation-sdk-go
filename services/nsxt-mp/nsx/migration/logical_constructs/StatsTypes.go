@@ -11,17 +11,17 @@
 package logical_constructs
 
 import (
-	vapiBindings_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/zhengxiexie/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/zhengxiexie/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``networkLayer`` of method Stats#getall.
+// Possible value for “networkLayer“ of method Stats#getall.
 const Stats_GETALL_NETWORK_LAYER_L2 = "L2"
 
-// Possible value for ``networkLayer`` of method Stats#getall.
+// Possible value for “networkLayer“ of method Stats#getall.
 const Stats_GETALL_NETWORK_LAYER_L3_L7 = "L3_L7"
 
 func statsGetallInputType() vapiBindings_.StructType {
