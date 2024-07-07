@@ -8,8 +8,8 @@ import (
 
 	"github.com/opentracing/opentracing-go"
 	opentracinglog "github.com/opentracing/opentracing-go/log"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
 )
 
 type serverSpan struct {

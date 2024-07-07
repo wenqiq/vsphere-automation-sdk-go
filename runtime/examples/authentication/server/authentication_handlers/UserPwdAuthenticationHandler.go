@@ -4,10 +4,10 @@
 package auth
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std"
-	"github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/security"
 )
 
 type UserPasswordAuthenticationHandler struct {

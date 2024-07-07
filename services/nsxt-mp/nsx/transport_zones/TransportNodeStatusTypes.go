@@ -11,47 +11,47 @@
 package transport_zones
 
 import (
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/vmware/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``source`` of method TransportNodeStatus#getall.
+// Possible value for “source“ of method TransportNodeStatus#getall.
 const TransportNodeStatus_GETALL_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method TransportNodeStatus#getall.
+// Possible value for “source“ of method TransportNodeStatus#getall.
 const TransportNodeStatus_GETALL_SOURCE_CACHED = "cached"
 
-// Possible value for ``status`` of method TransportNodeStatus#getall.
+// Possible value for “status“ of method TransportNodeStatus#getall.
 const TransportNodeStatus_GETALL_STATUS_UP = "UP"
 
-// Possible value for ``status`` of method TransportNodeStatus#getall.
+// Possible value for “status“ of method TransportNodeStatus#getall.
 const TransportNodeStatus_GETALL_STATUS_DOWN = "DOWN"
 
-// Possible value for ``status`` of method TransportNodeStatus#getall.
+// Possible value for “status“ of method TransportNodeStatus#getall.
 const TransportNodeStatus_GETALL_STATUS_DEGRADED = "DEGRADED"
 
-// Possible value for ``status`` of method TransportNodeStatus#getall.
+// Possible value for “status“ of method TransportNodeStatus#getall.
 const TransportNodeStatus_GETALL_STATUS_UNKNOWN = "UNKNOWN"
 
-// Possible value for ``source`` of method TransportNodeStatus#list.
+// Possible value for “source“ of method TransportNodeStatus#list.
 const TransportNodeStatus_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method TransportNodeStatus#list.
+// Possible value for “source“ of method TransportNodeStatus#list.
 const TransportNodeStatus_LIST_SOURCE_CACHED = "cached"
 
-// Possible value for ``status`` of method TransportNodeStatus#list.
+// Possible value for “status“ of method TransportNodeStatus#list.
 const TransportNodeStatus_LIST_STATUS_UP = "UP"
 
-// Possible value for ``status`` of method TransportNodeStatus#list.
+// Possible value for “status“ of method TransportNodeStatus#list.
 const TransportNodeStatus_LIST_STATUS_DOWN = "DOWN"
 
-// Possible value for ``status`` of method TransportNodeStatus#list.
+// Possible value for “status“ of method TransportNodeStatus#list.
 const TransportNodeStatus_LIST_STATUS_DEGRADED = "DEGRADED"
 
-// Possible value for ``status`` of method TransportNodeStatus#list.
+// Possible value for “status“ of method TransportNodeStatus#list.
 const TransportNodeStatus_LIST_STATUS_UNKNOWN = "UNKNOWN"
 
 func transportNodeStatusGetallInputType() vapiBindings_.StructType {

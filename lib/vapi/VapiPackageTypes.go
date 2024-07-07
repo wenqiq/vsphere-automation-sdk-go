@@ -11,14 +11,14 @@
 package vapi
 
 import (
-	vapiMetadataAuthentication_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/authentication"
-	vapiMetadataCli_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/cli"
-	vapiMetadataMetamodel_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
-	vapiMetadataPrivilege_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/privilege"
-	vapiMetadataRouting_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata/routing"
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	vapiMetadataAuthentication_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/metadata/authentication"
+	vapiMetadataCli_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/metadata/cli"
+	vapiMetadataMetamodel_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/metadata/metamodel"
+	vapiMetadataPrivilege_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/metadata/privilege"
+	vapiMetadataRouting_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/metadata/routing"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 

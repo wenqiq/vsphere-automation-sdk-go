@@ -11,38 +11,38 @@
 package api
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/vmware/vsphere-automation-sdk-go/services/nsxt-vmc-aws-integration/model"
 	"reflect"
 )
 
-// Possible value for ``state`` of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
+// Possible value for “state“ of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
 const CloudServiceVMCOnAWSTrafficGroup_LIST_TRAFFIC_GROUPS_STATE_FAILURE = "FAILURE"
 
-// Possible value for ``state`` of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
+// Possible value for “state“ of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
 const CloudServiceVMCOnAWSTrafficGroup_LIST_TRAFFIC_GROUPS_STATE_UNAVAILABLE = "UNAVAILABLE"
 
-// Possible value for ``state`` of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
+// Possible value for “state“ of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
 const CloudServiceVMCOnAWSTrafficGroup_LIST_TRAFFIC_GROUPS_STATE_SUCCESS = "SUCCESS"
 
-// Possible value for ``state`` of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
+// Possible value for “state“ of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
 const CloudServiceVMCOnAWSTrafficGroup_LIST_TRAFFIC_GROUPS_STATE_PENDING = "PENDING"
 
-// Possible value for ``state`` of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
+// Possible value for “state“ of method CloudServiceVMCOnAWSTrafficGroup#listTrafficGroups.
 const CloudServiceVMCOnAWSTrafficGroup_LIST_TRAFFIC_GROUPS_STATE_IN_PROGRESS = "IN_PROGRESS"
 
-// Possible value for ``action`` of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
+// Possible value for “action“ of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
 const CloudServiceVMCOnAWSTrafficGroup_TRIGGER_TRAFFIC_GROUP_ACTION_ACTION_END_RESTORE = "END_RESTORE"
 
-// Possible value for ``action`` of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
+// Possible value for “action“ of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
 const CloudServiceVMCOnAWSTrafficGroup_TRIGGER_TRAFFIC_GROUP_ACTION_ACTION_START_RESTORE = "START_RESTORE"
 
-// Possible value for ``action`` of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
+// Possible value for “action“ of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
 const CloudServiceVMCOnAWSTrafficGroup_TRIGGER_TRAFFIC_GROUP_ACTION_ACTION_SET_RESOURCE_STATUS_SUCCESS = "SET_RESOURCE_STATUS_SUCCESS"
 
-// Possible value for ``action`` of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
+// Possible value for “action“ of method CloudServiceVMCOnAWSTrafficGroup#triggerTrafficGroupAction.
 const CloudServiceVMCOnAWSTrafficGroup_TRIGGER_TRAFFIC_GROUP_ACTION_ACTION_SET_RESOURCE_STATUS_FAILURE = "SET_RESOURCE_STATUS_FAILURE"
 
 func cloudServiceVMCOnAWSTrafficGroupDeleteTrafficGroupInputType() bindings.StructType {

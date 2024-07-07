@@ -4,8 +4,8 @@
 package internal
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 )
 
 // Connector contract for implementing specific client connector type

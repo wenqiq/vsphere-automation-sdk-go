@@ -8,8 +8,8 @@ package metadata
 // Only valid to find resource/hasFieldOf metadata of structure info for given params info, Need to implement enumeration info
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/metadata/info"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/metadata/info"
 	"reflect"
 	"strings"
 )

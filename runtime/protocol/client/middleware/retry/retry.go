@@ -45,9 +45,9 @@
 package retry
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"net/http"
 )
 

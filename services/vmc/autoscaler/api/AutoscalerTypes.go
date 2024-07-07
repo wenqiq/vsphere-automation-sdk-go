@@ -11,10 +11,10 @@
 package api
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	"github.com/wenqiq/vsphere-automation-sdk-go/services/vmc/autoscaler/model"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/vmware/vsphere-automation-sdk-go/services/vmc/autoscaler/model"
 	"reflect"
 )
 

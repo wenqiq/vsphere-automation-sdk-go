@@ -9,12 +9,12 @@
 package firewall
 
 import (
-	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
-	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiStdErrors_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocolClient_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/client"
+	nsxModel "github.com/vmware/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2

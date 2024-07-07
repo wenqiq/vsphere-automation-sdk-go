@@ -9,7 +9,7 @@
 package greeter
 
 import (
-	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiCore_ "github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 )
 
 // The “Greeter“ interface provides methods to greet the client.

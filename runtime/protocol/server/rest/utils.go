@@ -4,16 +4,16 @@
 package rest
 
 import (
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
 	"net/http"
 	"net/url"
 	"strings"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
-	httpStatusCodes "github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib/rest"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
+	httpStatusCodes "github.com/vmware/vsphere-automation-sdk-go/runtime/lib/rest"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 )
 
 var runtimePropertiesToVapiErrorMap = map[string]string{

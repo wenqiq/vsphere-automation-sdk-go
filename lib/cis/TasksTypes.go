@@ -11,12 +11,12 @@
 package cis
 
 import (
-	cisTask_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/cis/task"
-	vapiStd_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std"
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	cisTask_ "github.com/vmware/vsphere-automation-sdk-go/lib/cis/task"
+	vapiStd_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
 	"reflect"
 )
 

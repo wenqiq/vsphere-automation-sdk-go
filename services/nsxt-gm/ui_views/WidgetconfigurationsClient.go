@@ -9,12 +9,12 @@
 package ui_views
 
 import (
-	vapiStdErrors_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocolClient_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
-	nsx_global_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-gm/model"
+	vapiStdErrors_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiCore_ "github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocolClient_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/client"
+	nsx_global_policyModel "github.com/vmware/vsphere-automation-sdk-go/services/nsxt-gm/model"
 )
 
 const _ = vapiCore_.SupportedByRuntimeVersion2

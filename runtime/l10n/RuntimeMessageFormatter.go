@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n/runtime"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n/runtime"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 )
 
 var (

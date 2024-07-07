@@ -6,8 +6,8 @@ package security
 import (
 	"fmt"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"strings"
 	"time"
 )

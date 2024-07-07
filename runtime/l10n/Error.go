@@ -3,7 +3,7 @@
 
 package l10n
 
-import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+import "github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 
 type Error struct {
 	id             string

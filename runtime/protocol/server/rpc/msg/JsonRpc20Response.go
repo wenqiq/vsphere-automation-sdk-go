@@ -6,8 +6,8 @@ package msg
 import (
 	"encoding/json"
 	"errors"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"reflect"
 )
 

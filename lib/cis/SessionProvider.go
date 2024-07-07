@@ -9,7 +9,7 @@
 package cis
 
 import (
-	vapiCore_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	vapiCore_ "github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 )
 
 // The “Session“ interface allows API clients to manage session tokens including creating, deleting and obtaining information about sessions.

@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message/catalog"
 )

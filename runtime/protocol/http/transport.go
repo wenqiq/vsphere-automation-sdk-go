@@ -5,7 +5,7 @@ package http
 
 import (
 	"context"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 	"net/http"
 )
 

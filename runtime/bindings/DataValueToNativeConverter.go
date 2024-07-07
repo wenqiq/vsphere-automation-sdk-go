@@ -12,10 +12,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
 )
 
 // DataValueToNativeConverter converts DataValue to golang native

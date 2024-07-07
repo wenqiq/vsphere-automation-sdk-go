@@ -5,7 +5,7 @@ task prepareGithubBindings(type: Copy) {
     from "$baseDir/$modulePath"
     into "$baseDir/$destRepo/$modulePath"
     include '**/*'
-    filter { line -> line.replaceAll("github.com/wenqiq/vsphere-automation-sdk-go", destRepo) }
+    filter { line -> line.replaceAll("github.com/vmware/vsphere-automation-sdk-go", destRepo) }
 }
 
 defaultTasks 'prepareGithubBindings'

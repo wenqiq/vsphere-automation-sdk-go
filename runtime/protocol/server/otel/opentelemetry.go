@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/server/tracing"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"

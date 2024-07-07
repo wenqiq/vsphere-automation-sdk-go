@@ -11,11 +11,11 @@
 package privilege
 
 import (
-	vapiMetadata_ "github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/metadata"
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiLog_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	vapiMetadata_ "github.com/vmware/vsphere-automation-sdk-go/lib/vapi/metadata"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiLog_ "github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
 	"net/url"
 	"reflect"
 )

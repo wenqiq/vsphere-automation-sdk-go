@@ -5,10 +5,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/wenqiq/vsphere-automation-sdk-go/lib/vapi/std/errors"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/examples/authentication/client/bindings/src/generated/vmodl/examples/greeter"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol/client"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/security"
+	"github.com/vmware/vsphere-automation-sdk-go/lib/vapi/std/errors"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/examples/authentication/client/bindings/src/generated/vmodl/examples/greeter"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol/client"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/security"
 )
 
 const correctUsername = "username"

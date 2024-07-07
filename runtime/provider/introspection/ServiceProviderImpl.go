@@ -5,8 +5,8 @@ package introspection
 
 //
 // import (
-//	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-//	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/provider/introspection/bindings/service"
+//	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+//	"github.com/vmware/vsphere-automation-sdk-go/runtime/provider/introspection/bindings/service"
 // )
 //
 // type ServiceImpl struct {

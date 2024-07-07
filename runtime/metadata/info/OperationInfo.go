@@ -3,7 +3,7 @@
 
 package info
 
-import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
+import "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
 
 type OperationInfo struct {
 	privileges          []string

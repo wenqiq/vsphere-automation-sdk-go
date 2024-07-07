@@ -3,7 +3,7 @@
 
 package introspection
 
-import "github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
+import "github.com/vmware/vsphere-automation-sdk-go/runtime/core"
 
 // should be called ApiIntrospector instead.
 // the act is introspection. Actor is introspector. like stringer

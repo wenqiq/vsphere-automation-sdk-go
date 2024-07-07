@@ -11,23 +11,23 @@
 package backups
 
 import (
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/vmware/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``frameType`` of method Config#update.
+// Possible value for “frameType“ of method Config#update.
 const Config_UPDATE_FRAME_TYPE_GLOBAL_MANAGER = "GLOBAL_MANAGER"
 
-// Possible value for ``frameType`` of method Config#update.
+// Possible value for “frameType“ of method Config#update.
 const Config_UPDATE_FRAME_TYPE_LOCAL_MANAGER = "LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Config#update.
+// Possible value for “frameType“ of method Config#update.
 const Config_UPDATE_FRAME_TYPE_LOCAL_LOCAL_MANAGER = "LOCAL_LOCAL_MANAGER"
 
-// Possible value for ``frameType`` of method Config#update.
+// Possible value for “frameType“ of method Config#update.
 const Config_UPDATE_FRAME_TYPE_NSX_INTELLIGENCE = "NSX_INTELLIGENCE"
 
 func configGetInputType() vapiBindings_.StructType {

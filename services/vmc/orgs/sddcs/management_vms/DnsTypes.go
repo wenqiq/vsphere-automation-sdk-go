@@ -11,17 +11,17 @@
 package management_vms
 
 import (
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	vmcModel "github.com/wenqiq/vsphere-automation-sdk-go/services/vmc/model"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	vmcModel "github.com/vmware/vsphere-automation-sdk-go/services/vmc/model"
 	"reflect"
 )
 
-// Possible value for ``ipType`` of method Dns#update.
+// Possible value for “ipType“ of method Dns#update.
 const Dns_UPDATE_IP_TYPE_PUBLIC = "public"
 
-// Possible value for ``ipType`` of method Dns#update.
+// Possible value for “ipType“ of method Dns#update.
 const Dns_UPDATE_IP_TYPE_PRIVATE = "private"
 
 func dnsUpdateInputType() vapiBindings_.StructType {

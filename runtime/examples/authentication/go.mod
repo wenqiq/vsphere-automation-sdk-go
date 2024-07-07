@@ -1,10 +1,10 @@
-module github.com/wenqiq/vsphere-automation-sdk-go/runtime/examples/authentication
+module github.com/vmware/vsphere-automation-sdk-go/runtime/examples/authentication
 
 go 1.17
 
 require (
-	github.com/wenqiq/vsphere-automation-sdk-go/runtime v0.0.0-20220620141103-6f5e45110975
-	github.com/wenqiq/vsphere-automation-sdk-go/lib v0.0.0-20220620214802-a2bf3241de73
+	github.com/vmware/vsphere-automation-sdk-go/runtime v0.0.0-20220620141103-6f5e45110975
+	github.com/vmware/vsphere-automation-sdk-go/lib v0.0.0-20220620214802-a2bf3241de73
 )
 
 require (

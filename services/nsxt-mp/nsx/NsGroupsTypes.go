@@ -11,17 +11,17 @@
 package nsx
 
 import (
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	nsxModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	nsxModel "github.com/vmware/vsphere-automation-sdk-go/services/nsxt-mp/nsx/model"
 	"reflect"
 )
 
-// Possible value for ``action`` of method NsGroups#addorremoveexpression.
+// Possible value for “action“ of method NsGroups#addorremoveexpression.
 const NsGroups_ADDORREMOVEEXPRESSION_ACTION_ADD_MEMBERS = "ADD_MEMBERS"
 
-// Possible value for ``action`` of method NsGroups#addorremoveexpression.
+// Possible value for “action“ of method NsGroups#addorremoveexpression.
 const NsGroups_ADDORREMOVEEXPRESSION_ACTION_REMOVE_MEMBERS = "REMOVE_MEMBERS"
 
 func nsGroupsAddorremoveexpressionInputType() vapiBindings_.StructType {

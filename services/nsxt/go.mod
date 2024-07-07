@@ -1,10 +1,10 @@
-module github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt
+module github.com/vmware/vsphere-automation-sdk-go/services/nsxt
 
 go 1.17
 
 require (
-	github.com/wenqiq/vsphere-automation-sdk-go/lib v0.7.1
-	github.com/wenqiq/vsphere-automation-sdk-go/runtime v0.7.1
+	github.com/vmware/vsphere-automation-sdk-go/lib v0.7.1
+	github.com/vmware/vsphere-automation-sdk-go/runtime v0.7.1
 )
 
 require (

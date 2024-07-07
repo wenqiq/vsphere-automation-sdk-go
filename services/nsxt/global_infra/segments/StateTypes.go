@@ -11,53 +11,53 @@
 package segments
 
 import (
-	vapiBindings_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	vapiData_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	vapiProtocol_ "github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
-	nsx_policyModel "github.com/wenqiq/vsphere-automation-sdk-go/services/nsxt/model"
+	vapiBindings_ "github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	vapiData_ "github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	vapiProtocol_ "github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
+	nsx_policyModel "github.com/vmware/vsphere-automation-sdk-go/services/nsxt/model"
 	"reflect"
 )
 
-// Possible value for ``bgpNeighborType`` of method State#get.
+// Possible value for “bgpNeighborType“ of method State#get.
 const State_GET_BGP_NEIGHBOR_TYPE_INTER_SR = "INTER_SR"
 
-// Possible value for ``bgpNeighborType`` of method State#get.
+// Possible value for “bgpNeighborType“ of method State#get.
 const State_GET_BGP_NEIGHBOR_TYPE_USER = "USER"
 
-// Possible value for ``source`` of method State#get.
+// Possible value for “source“ of method State#get.
 const State_GET_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method State#get.
+// Possible value for “source“ of method State#get.
 const State_GET_SOURCE_CACHED = "cached"
 
-// Possible value for ``statsType`` of method State#get.
+// Possible value for “statsType“ of method State#get.
 const State_GET_STATS_TYPE_STATS = "DATAPATH_STATS"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_PENDING = "pending"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_IN_PROGRESS = "in_progress"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_SUCCESS = "success"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_FAILED = "failed"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_PARTIAL_SUCCESS = "partial_success"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_ORPHANED = "orphaned"
 
-// Possible value for ``configurationState`` of method State#list.
+// Possible value for “configurationState“ of method State#list.
 const State_LIST_CONFIGURATION_STATE_UNKNOWN = "unknown"
 
-// Possible value for ``source`` of method State#list.
+// Possible value for “source“ of method State#list.
 const State_LIST_SOURCE_REALTIME = "realtime"
 
-// Possible value for ``source`` of method State#list.
+// Possible value for “source“ of method State#list.
 const State_LIST_SOURCE_CACHED = "cached"
 
 func stateGetInputType() vapiBindings_.StructType {

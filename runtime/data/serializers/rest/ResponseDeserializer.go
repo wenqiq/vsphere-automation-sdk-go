@@ -7,16 +7,16 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/l10n"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/l10n"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/lib"
 
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/bindings"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/core"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
-	httpStatus "github.com/wenqiq/vsphere-automation-sdk-go/runtime/lib/rest"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/log"
-	"github.com/wenqiq/vsphere-automation-sdk-go/runtime/protocol"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/bindings"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/core"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/data/serializers/cleanjson"
+	httpStatus "github.com/vmware/vsphere-automation-sdk-go/runtime/lib/rest"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/log"
+	"github.com/vmware/vsphere-automation-sdk-go/runtime/protocol"
 )
 
 var jsonToDataValueDecoder *cleanjson.JsonToDataValueDecoder = cleanjson.NewJsonToDataValueDecoder()
